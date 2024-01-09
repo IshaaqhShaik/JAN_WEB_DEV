@@ -26,3 +26,25 @@ Adding a new SSH key to your GitHub account
 4. In the "Key" field, paste your public key.
    Click Add SSH key.
 
+Overview of Git and Todays Class !
+1. What is GIT ?
+Git is a DevOps tool used for source code management. 
+It is a free and open-source version control system used to handle small to very large projects efficiently. 
+Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
+
+2.Git Lifecycle!
+
+You clone the Git repository as a working copy.
+You modify the working copy by adding/editing files.
+If necessary, you also update the working copy by taking other developer's changes.
+You review the changes before commit.
+You commit changes. If everything is fine, then you push the changes to the repository.
+After committing, if you realize something is wrong, then you correct the last commit and push the changes to the repository.
+
+3.Commands
+  The main tool you use to determine which files are in which state is the “ git status ” command.
+Ex:- $ git status 
+   On branch master
+  Your branch is up-to-date with 'origin/master'. 
+  nothing to commit, working tree clean
+  
