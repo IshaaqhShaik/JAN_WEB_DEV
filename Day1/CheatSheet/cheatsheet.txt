@@ -26,6 +26,27 @@ Adding a new SSH key to your GitHub account
 4. In the "Key" field, paste your public key.
    Click Add SSH key.
 
+
+Generating a new SSH key and adding for  Windows:
+
+Open terminal in git bash.
+1) Then   C:\Users\SADDAM>ssh-keygen -t rsa -b 4096 -C "saddamkhan.9782@gmail.com"
+
+2) after that  press enter .
+
+3) then C:\Users\SADDAM>clip < .ssh/id_rsa.pub
+
+4)then goto settings then open ssh and keys and then paste this key and save.
+
+5) and then open repoin git in browser and then code and then from local take this from ssh git@github.com:IshaaqhShaik/JAN_WEB_DEV.git
+
+6) then  C:\Users\SADDAM>git clone git@github.com:IshaaqhShaik/JAN_WEB_DEV.git
+
+7) and then list and do cd JAN_WEB_DEV.
+  ex:- C:\Users\SADDAM>cd JAN_WEB_DEV
+
+
+
 Overview of Git and Todays Class !
 1. What is GIT ?
 Git is a DevOps tool used for source code management. 
@@ -47,4 +68,21 @@ Ex:- $ git status
    On branch master
   Your branch is up-to-date with 'origin/master'. 
   nothing to commit, working tree clean
-  
+
+In order to begin tracking a new file, you use the command git add. 
+ex: git add README
+
+The simplest way to commit is to type “ git commit “.
+ex:git commit -m "message"
+
+if you run git rm, it stages the file’s removal.
+ex: git rm readme.text
+
+To push the changes you need to give the below command.
+ex: git push
+
+If you want to rename a file in Git, you can run something like:$ git mv file_from file_to 
+ex: git saddam_moved.txt saddam.txt
+
+ to avoid merge conflicts after the pushing the commit to repository we use pull command.
+ ex: git pull 
