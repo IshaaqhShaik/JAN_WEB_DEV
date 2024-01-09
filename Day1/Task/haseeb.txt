@@ -1,7 +1,3 @@
-Name: G.S.Farooq.
-company: DXC Technologies.
-Domain: Java Web Developer.
-Address: Banglore, Electronicity, phaseI.
-Number:  9133095885
-mail: gollapallishaikfarooq@gmail.com
-Local Address: Indiranagar, madanapalli, AP, 517325.
+Name: Abdul Haseeb
+phone: 8500768444
+mail : haseebkolkar6666@gmail.com
