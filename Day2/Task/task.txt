@@ -1,1 +1,27 @@
-git~
+About pull request reviews
+After a pull request is opened, anyone with read access can review and comment on the changes it proposes. You can also suggest specific changes to lines of code, which the author can apply directly from the pull request. For more information, see "Reviewing proposed changes in a pull request."
+
+By default, in public repositories, any user can submit reviews that approve or request changes to a pull request. Organization owners and repository admins can limit who is able to give approving pull request reviews or request changes. For more information, see "Managing pull request reviews in your organization" and "Managing pull request reviews in your repository."
+
+Repository owners and collaborators can request a pull request review from a specific person. Organization members can also request a pull request review from a team with read access to the repository. For more information, see "Requesting a pull request review." You can specify a subset of team members to be automatically assigned in the place of the whole team. For more information, see "Managing code review settings for your team."
+
+Reviews allow for discussion of proposed changes and help ensure that the changes meet the repository's contributing guidelines and other quality standards. You can define which individuals or teams own certain types or areas of code in a CODEOWNERS file. When a pull request modifies code that has a defined owner, that individual or team will automatically be requested as a reviewer. For more information, see "About code owners."
+
+For an introduction to requesting and providing pull request reviews, see the Review pull requests GitHub Skills course.
+
+You can schedule reminders for pull requests that need to be reviewed. For more information, see "Managing scheduled reminders for your team."
+
+A review has three possible statuses:
+
+Comment: Submit general feedback without explicitly approving the changes or requesting additional changes.
+Approve: Submit feedback and approve merging the changes proposed in the pull request.
+Request changes: Submit feedback that must be addressed before the pull request can be merged.
+Tips:
+
+If a collaborator with admin, owner, or write access to the repository submits a review requesting changes, the pull request cannot be merged until the same collaborator submits another review approving the changes in the pull request.
+Repository owners and administrators can merge a pull request even if it hasn't received an approving review, or if a reviewer who requested changes has left the organization or is unavailable.
+If both required reviews and stale review dismissal are enabled and a code-modifying commit is pushed to the branch of an approved pull request, the approval is dismissed. The pull request must be reviewed and approved again before it can be merged.
+When several open pull requests each have a head branch pointing to the same commit, you won’t be able to merge them if one or both have a pending or rejected review.
+If your repository requires approving reviews from people with write or admin permissions, then any approvals from people with these permissions are denoted with a green check mark, and approvals from people without these permissions have a gray check mark. Approvals with a gray check mark do not affect whether the pull request can be merged.
+Pull request authors cannot approve their own pull requests.
+You can view all of the reviews a pull request has received in the Conversation timeline, and you can see reviews by repository owners and collaborators in the pull request's merge box.
