@@ -25,17 +25,14 @@ When several open pull requests each have a head branch pointing to the same com
 If your repository requires approving reviews from people with write or admin permissions, then any approvals from people with these permissions are denoted with a green check mark, and approvals from people without these permissions have a gray check mark. Approvals with a gray check mark do not affect whether the pull request can be merged.
 Pull request authors cannot approve their own pull requests.
 You can view all of the reviews a pull request has received in the Conversation timeline, and you can see reviews by repository owners and collaborators in the pull request's merge box.
-//Farooq
-You can resolve a conversation in a pull request if you opened the pull request or if you have write access to the repository where the pull request was opened.
 
-To indicate that a conversation on the Files changed tab is complete, click Resolve conversation.
 
-The entire conversation will be collapsed and marked as resolved, making it easier to find conversations that still need to be addressed.
+Haseeb : 
 
-If the suggestion in a comment is out of your pull request's scope, you can open a new issue that tracks the feedback and links back to the original comment. For more information, see "Creating an issue."
+You can re-request a review, for example, after you've made substantial changes to your pull request. To request a fresh review from a reviewer, in the sidebar of the Conversation tab, click the  icon.
 
-Discovering and navigating conversations
-You can discover and navigate to all the conversations in your pull request using the Conversations menu that's shown at the top of the Files Changed tab.
+Required reviews
+Repository administrators or custom roles with the "edit repository rules" permission can require that all pull requests receive a specific number of approving reviews before someone merges the pull request into a protected branch. You can require approving reviews from people with write permissions in the repository or from a designated code owner. For more information, see "About protected branches."
 
 From this view, you can see which conversations are unresolved, resolved, and outdated. This makes it easy to discover and resolve conversations.
 
@@ -46,4 +43,5 @@ You can re-request a review, for example, after you've made substantial changes 
 Required reviews
 Repository administrators or custom roles with the "edit repository rules" permission can require that all pull requests receive a specific number of approving reviews before someone merges the pull request into a protected branch. You can require approving reviews from people with write permissions in the repository or from a designated code owner. For more information, see "About protected branches."
 
+Tip: If necessary, people with admin or write access to a repository can dismiss a pull request review. For more information, see "Dismissing a pull request review."
 Tip: If necessary, people with admin or write access to a repository can dismiss a pull request review. For more information, see "Dismissing a pull request review."
