@@ -25,3 +25,13 @@ When several open pull requests each have a head branch pointing to the same com
 If your repository requires approving reviews from people with write or admin permissions, then any approvals from people with these permissions are denoted with a green check mark, and approvals from people without these permissions have a gray check mark. Approvals with a gray check mark do not affect whether the pull request can be merged.
 Pull request authors cannot approve their own pull requests.
 You can view all of the reviews a pull request has received in the Conversation timeline, and you can see reviews by repository owners and collaborators in the pull request's merge box.
+
+
+Haseeb : 
+
+You can re-request a review, for example, after you've made substantial changes to your pull request. To request a fresh review from a reviewer, in the sidebar of the Conversation tab, click the  icon.
+
+Required reviews
+Repository administrators or custom roles with the "edit repository rules" permission can require that all pull requests receive a specific number of approving reviews before someone merges the pull request into a protected branch. You can require approving reviews from people with write permissions in the repository or from a designated code owner. For more information, see "About protected branches."
+
+Tip: If necessary, people with admin or write access to a repository can dismiss a pull request review. For more information, see "Dismissing a pull request review."
