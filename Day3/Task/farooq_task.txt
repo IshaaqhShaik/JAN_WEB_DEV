@@ -3,3 +3,8 @@ git status
 Usage: git status
 
 This command lists all the files that have to be committed.
+commit2
+git add
+Usage: git add [file]
+
+This command adds a file to the staging area.
