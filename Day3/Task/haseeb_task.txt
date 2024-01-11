@@ -1,1 +1,9 @@
+commit -1
+
 If I have a local branch from a remote one, I don't feel comfortable with merging other branches than this one with the remote. Also I would not push my changes, until I'm happy with what I want to push and also I wouldn't push things at all, that are only for me and my local repository. In your description it seems, that test is only for you? So no reason to publish it.
+
+commit -2 
+
+@shanyangqu To get the latest changes from the remote. If you work alone and only with one system ever there is no problem. But when there are changes pushed from a different system (probably from a different developer) you'll see a conflict as soon as you try to push your merge back (the 4th step). The only solution now is to merge your local master into the remotes master, which ends up in a pretty ugly "merged master into origin/master" merge commit. So it's always a good idea to make a pull before the merge – 
+KingCrunch
+ Dec 24, 2015 at 22:47
