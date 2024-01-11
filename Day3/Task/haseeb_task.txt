@@ -1,0 +1,37 @@
+commit -1
+
+If I have a local branch from a remote one, I don't feel comfortable with merging other branches than this one with the remote. Also I would not push my changes, until I'm happy with what I want to push and also I wouldn't push things at all, that are only for me and my local repository. In your description it seems, that test is only for you? So no reason to publish it.
+
+commit -2 
+
+@shanyangqu To get the latest changes from the remote. If you work alone and only with one system ever there is no problem. But when there are changes pushed from a different system (probably from a different developer) you'll see a conflict as soon as you try to push your merge back (the 4th step). The only solution now is to merge your local master into the remotes master, which ends up in a pretty ugly "merged master into origin/master" merge commit. So it's always a good idea to make a pull before the merge – 
+KingCrunch
+ Dec 24, 2015 at 22:47
+
+ commit -3 
+
+ This approach has two issues:
+
+It's unsafe, because we don't know if there are any conflicts between test branch and master branch.
+
+It would "squeeze" all test commits into one merge commit on master; that is to say on master branch, we can't see the all change logs of test branch.
+
+
+commit -4
+
+Now, switch to the copied branch (new-feature-copy) and merge the master branch to this branch. In this step, you can resolve any conflicts. After the merge, test that everything works as intended:
+
+
+commit -5
+
+Explanation
+
+git fetch -p will retrieve any changes that have been made since your last fetch, and the -p prunes your branches, deleting any outdated branches.
+
+git checkout master checkout the master branch
+
+git rebase origin/master updates the master branch. doing a pull here will give you the same result.
+
+git checkout test checkout the branch you have made changes on
+
+git rebase master updates the test branch with changes on master. This merge any changed files, and if there are conflicts on any of your commits you will have to resolve them and then do a git rebase --continue or git rebase --abort
