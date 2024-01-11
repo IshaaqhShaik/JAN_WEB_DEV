@@ -13,3 +13,7 @@ git clone
 Usage: git clone [url]
 
 This command is used to obtain a repository from an existing URL.
+commit4
+git init
+Usage: git init [repository name]
+This command is used to start a new repository.
