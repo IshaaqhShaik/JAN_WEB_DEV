@@ -1,3 +1,5 @@
 To checkout to a specific commit using its commit ID, open your terminal and make sure you are in the root directory of your local repository.
 
 Now, use the git checkout command with the commit’s SHA. The syntax of the command is git checkout [commit_id], where [commit_id] is the SHA you copied earlier
+
+For example, if your commit ID is a9c1486e8b05cb833a52fcebc379edc9c54be67b, you would use git checkout a9c1486e8b05cb833a52fcebc379edc9c54be67b.
