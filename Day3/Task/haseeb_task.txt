@@ -16,3 +16,7 @@ It's unsafe, because we don't know if there are any conflicts between test branc
 
 It would "squeeze" all test commits into one merge commit on master; that is to say on master branch, we can't see the all change logs of test branch.
 
+
+commit -4
+
+Now, switch to the copied branch (new-feature-copy) and merge the master branch to this branch. In this step, you can resolve any conflicts. After the merge, test that everything works as intended:
