@@ -1,1 +1,25 @@
 overview of todays class
+overview of todays class
+Commands :
+
+git branch : it lists all the branches in the repository
+git checkout . :  It reverts modifications to files and    brings the working directory back to the state of the last commit. The dot (.) refers to the current directory.
+git checkout branch_name : This command is used to switch to an existing branch in the repository. It allows you to work on the code contained within that specific branch.
+Now the  Question is How to create a Branch ?
+git checkout -b branch_name
+
+Type of branches -
+
+1.feature
+2.release
+3.hotfix
+
+FInally The workflow of creating a file and all 
+
+
+  1.git add filename.txt
+  2.git status
+  3.git add . 
+  4.git commit -m "commit message"
+  5.git push
+
