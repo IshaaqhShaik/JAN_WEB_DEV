@@ -20,3 +20,18 @@ It would "squeeze" all test commits into one merge commit on master; that is to 
 commit -4
 
 Now, switch to the copied branch (new-feature-copy) and merge the master branch to this branch. In this step, you can resolve any conflicts. After the merge, test that everything works as intended:
+
+
+commit -5
+
+Explanation
+
+git fetch -p will retrieve any changes that have been made since your last fetch, and the -p prunes your branches, deleting any outdated branches.
+
+git checkout master checkout the master branch
+
+git rebase origin/master updates the master branch. doing a pull here will give you the same result.
+
+git checkout test checkout the branch you have made changes on
+
+git rebase master updates the test branch with changes on master. This merge any changed files, and if there are conflicts on any of your commits you will have to resolve them and then do a git rebase --continue or git rebase --abort
