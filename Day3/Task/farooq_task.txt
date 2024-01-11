@@ -1,0 +1,5 @@
+commit1
+git status
+Usage: git status
+
+This command lists all the files that have to be committed.
