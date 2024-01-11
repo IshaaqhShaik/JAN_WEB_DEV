@@ -1,0 +1,1 @@
+To checkout to a specific commit using its commit ID, open your terminal and make sure you are in the root directory of your local repository.
