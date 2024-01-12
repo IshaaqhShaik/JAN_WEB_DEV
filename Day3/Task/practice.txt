@@ -1,0 +1,1 @@
+The git revert command is used for undoing changes to a repository's commit history.
