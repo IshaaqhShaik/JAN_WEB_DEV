@@ -6,4 +6,3 @@ mixed, or hard, developers can
 reset the project to a specific
 commit, removing unwanted
 changes and restoring the project
-to a previous state
