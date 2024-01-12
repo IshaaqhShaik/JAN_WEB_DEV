@@ -1,5 +1,0 @@
-The git revert command is used for undoing changes to a repository's commit history. Other 'undo' commands like, git checkout and git reset, move the HEAD and branch ref pointers to a specified commit.
-
-The git revert command is a forward-moving undo operation that offers a safe method of undoing changes.
-Instead of deleting or orphaning commits in the commit history, a revert will create a new commit that inverses the changes specified.
- Git revert is a safer alternative to git reset in regards to losing work. To demonstrate the effects of git revert we leveraged other commands that have more in-depth documentation on their individual pages: git log, git commit, and git reset.
