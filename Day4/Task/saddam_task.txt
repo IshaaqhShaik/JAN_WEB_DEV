@@ -1,0 +1,9 @@
+Git Reset is a powerful command
+that allows developers to rewrite
+the project's history. By using
+different options such as soft,
+mixed, or hard, developers can
+reset the project to a specific
+commit, removing unwanted
+changes and restoring the project
+to a previous state
