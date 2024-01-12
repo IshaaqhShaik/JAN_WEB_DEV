@@ -6,3 +6,13 @@ mixed, or hard, developers can
 reset the project to a specific
 commit, removing unwanted
 changes and restoring the project
+
+To master version control
+techniques, it's important to
+follow best practices when using
+Git Revert and Git Reset. Always
+create a backup branch before
+making significant changes, and
+communicate with the team to
+ensure everyone is aware of the
+modifications.
