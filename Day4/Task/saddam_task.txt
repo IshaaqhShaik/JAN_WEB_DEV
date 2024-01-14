@@ -18,5 +18,3 @@ ensure everyone is aware of the
 modifications.
 
 Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
-
-Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, 
