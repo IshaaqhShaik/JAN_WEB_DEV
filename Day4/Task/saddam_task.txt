@@ -1,4 +1,11 @@
-Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently
+Git Reset is a powerful command
+that allows developers to rewrite
+the project's history. By using
+different options such as soft,
+mixed, or hard, developers can
+reset the project to a specific
+commit, removing unwanted
+changes and restoring the project
 
 To master version control
 techniques, it's important to
