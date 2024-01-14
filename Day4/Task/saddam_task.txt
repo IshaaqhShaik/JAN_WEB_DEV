@@ -16,5 +16,3 @@ making significant changes, and
 communicate with the team to
 ensure everyone is aware of the
 modifications.
-
-Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
