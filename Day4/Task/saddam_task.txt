@@ -1,0 +1,23 @@
+Git Reset is a powerful command
+that allows developers to rewrite
+the project's history. By using
+different options such as soft,
+mixed, or hard, developers can
+reset the project to a specific
+commit, removing unwanted
+changes and restoring the project
+
+To master version control
+techniques, it's important to
+follow best practices when using
+Git Revert and Git Reset. Always
+create a backup branch before
+making significant changes, and
+communicate with the team to
+ensure everyone is aware of the
+modifications.
+modifications.
+
+Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
+
+
