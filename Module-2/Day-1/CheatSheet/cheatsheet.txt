@@ -1,0 +1,106 @@
+What is Programming ?
+Programming refers to a technological process for telling a computer which tasks to 
+perform in order to solve problems. You can think of programming as a collaboration 
+between humans and computers, in which humans create instructions for a computer 
+to follow (code) in a language computers can understand.
+
+What Are Programming Translator ?
+1.Compilers.
+2.Interpreters. 
+3.Assemblers.
+
+
+# Variable ?
+A variable is a “named storage” for data. We 
+can use variables to store goodies, visitors, 
+and other data.
+To create a variable in JavaScript, use the let 
+keyword.
+
+Variables
+JavaScript Variables can be 
+declared in  this ways!
+● Using var
+● Using let
+● Using const
+
+Lets see some examples !
+- let  message;
+- Now, we can put some data into it by 
+using the assignment operator =
+–      let  message;
+message = ‘Hello’; // store the string 
+‘Hello’ in the variable named message.
+
+
+# Variable naming
+There are two limitations on variable names in JavaScript:
+The name must contain only letters, digits, or the symbols $ 
+and _.
+The first character must not be a digit.
+1. let  userName;
+2. let  test123
+
+
+Correct variables:
+We can use $ dollar sign and even _ underscore can 
+also used in names.
+let $ = 1; // declared a variable with the name "$"
+let _ = 2; // and now a variable with the name "_"
+alert($ + _); // 3
+
+
+Constants : {const}
+To declare a constant (unchanging) variable, use const instead of let.
+  # const myBirthday = ‘01.01.1997’;
+Variables declared using const are called “constants”. They cannot be reassigned. 
+An attempt to do so would cause an error.
+    #  const myBirthday = ‘01.01.1997’;
+      myBirthday = ‘20.11.2001’; // error,can’t re assign the constant !
+.
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+Primitive Data Types:
+The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
+
+Number: JavaScript numbers are always stored in double-precision 64-bit binary format IEEE 754. Unlike other programming languages, you don’t need int, float, etc to declare different numeric values.
+String: JavaScript Strings are similar to sentences. They are made up of a list of characters, which is essentially just an “array of characters, like “Hello GeeksforGeeks” etc.
+Boolean: Represent a logical entity and can have two values: true or false.
+Null: This type has only one value that is null.
+Undefined: A variable that has not been assigned a value is undefined.
+Symbol: Symbols return unique identifiers that can be used to add unique property keys to an object that won’t collide with keys of any other code that might add to the object.
+BigInt: BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 253-1.
+
+
+Non-Primitive Data Types:
+The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.
+
+Object: It is the most important data type and forms the building blocks for modern JavaScript. We will learn about these data types in detail in further articles.
+
+
+
+
+Resources:
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+https://www.geeksforgeeks.org/memory-management-in-javascript/
+
+https://www.slideshare.net/JobinJobin3/programming-230954503?from_search=0
+
+https://www.slideshare.net/FinsaNurpandi1/javascript-basic-111860990?from_search=2
+
+https://linuxhint.com/javascript-declare-multiple-variables/
+
+https://javascript.info/variables
+
+https://javascript.info/types
+
+https://www.geeksforgeeks.org/memory-management-in-javascript/
