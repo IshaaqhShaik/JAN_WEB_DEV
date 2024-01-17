@@ -1,24 +1,24 @@
 What is Programming ?
-Programming refers to a technological process for telling a computer which tasks to 
-perform in order to solve problems. You can think of programming as a collaboration 
-between humans and computers, in which humans create instructions for a computer 
+Programming refers to a technological process for telling a computer which tasks to
+perform in order to solve problems. You can think of programming as a collaboration
+between humans and computers, in which humans create instructions for a computer
 to follow (code) in a language computers can understand.
 
 What Are Programming Translator ?
 1.Compilers.
-2.Interpreters. 
+2.Interpreters.
 3.Assemblers.
 
 
 # Variable ?
-A variable is a “named storage” for data. We 
-can use variables to store goodies, visitors, 
+A variable is a “named storage” for data. We
+can use variables to store goodies, visitors,
 and other data.
-To create a variable in JavaScript, use the let 
+To create a variable in JavaScript, use the let
 keyword.
 
 Variables
-JavaScript Variables can be 
+JavaScript Variables can be
 declared in  this ways!
 ● Using var
 ● Using let
@@ -26,16 +26,16 @@ declared in  this ways!
 
 Lets see some examples !
 - let  message;
-- Now, we can put some data into it by 
+- Now, we can put some data into it by
 using the assignment operator =
 –      let  message;
-message = ‘Hello’; // store the string 
+message = ‘Hello’; // store the string
 ‘Hello’ in the variable named message.
 
 
 # Variable naming
 There are two limitations on variable names in JavaScript:
-The name must contain only letters, digits, or the symbols $ 
+The name must contain only letters, digits, or the symbols $
 and _.
 The first character must not be a digit.
 1. let  userName;
