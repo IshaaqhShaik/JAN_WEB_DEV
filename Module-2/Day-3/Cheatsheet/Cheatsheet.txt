@@ -1,0 +1,202 @@
+Conditionals:
+IF condition:
+The if statement is a fundamental control flow statement in programming.
+It allows you to execute a block of code if a specified condition is true.
+Example in JavaScript
+
+if (condition) {
+  // code to be executed if the condition is true
+}
+IF-ELSE condition:
+The if-else statement allows you to execute one block of code if the condition is true and another block if it's false.
+Example:
+javascript
+if (condition) {
+  // code to be executed if the condition is true
+} else {
+  // code to be executed if the condition is false
+}
+
+Nested IF-ELSE and ELSE IF:
+
+You can nest if-else statements inside each other for more complex decision-making.
+else if allows you to check multiple conditions in sequence.
+Example:
+javascript
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition2 is true
+} else {
+  // code to be executed if none of the conditions are true
+}
+Switch Case:
+
+switch is used when you have multiple possible conditions to check.
+It compares the expression value with case values and executes the code associated with the matching case.
+Example:
+javascript
+switch (expression) {
+  case value1:
+    // code to be executed if expression equals value1
+    break;
+  case value2:
+    // code to be executed if expression equals value2
+    break;
+  default:
+    // code to be executed if expression doesn't match any case
+}
+Ternary Conditions:
+
+A ternary operator provides a concise way to write if-else statements in a single line.
+Example:
+javascript
+let result = (condition) ? trueValue : falseValue;
+// If condition is true, result will be trueValue; otherwise, it will be falseValue
+Interactions:
+Alert:
+alert is a method used in web development to display a pop-up box with a message.
+Example:
+javascript
+alert("This is an alert!");
+
+Prompt:
+prompt is used to get input from the user through a pop-up box.
+Example:
+javascript
+let userInput = prompt("Enter something:");
+Data Types (NaN, Undefined, Null):
+NaN (Not a Number):
+
+Represents a value that is not a valid number.
+Example:
+javascript
+let result = "abc" / 2; // result will be NaN
+Undefined:
+
+A variable that has been declared but has not been assigned a value is undefined.
+Example:
+javascript
+let x;
+console.log(x); // prints undefined
+Null:
+
+Represents the intentional absence of any object value.
+It is often used to explicitly declare that a variable has no value or that an object property is intentionally empty.
+Example:
+javascript
+let y = null;
+
+
+// Interview Qustion on this topics
+
+
+Conditionals:
+Interactions:
+
+Question: Explain what interactions are in the context of programming conditionals.
+Answer: Interactions refer to the way a program responds to different situations or conditions. This involves using conditional statements like if, else if, else, switch-case, and ternary operators to control the flow of the program based on certain conditions.
+// Example of interactions using if-else statements
+let userResponse = prompt("Do you want to continue?");
+
+if (userResponse === "yes") {
+    alert("Continuing...");
+} else {
+    alert("Stopping.");
+}
+
+
+IF Condition:
+Question: How does the "if" condition work in programming?
+Answer: The "if" condition is a fundamental construct in programming. It evaluates a given condition, and if the condition is true, the associated block of code is executed. If the condition is false, the code block is skipped.
+// Example of an if condition
+let age = 25;
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+}
+
+IF-Else Condition:
+Question: What is the purpose of the "else" statement in an "if-else" condition?
+Answer: The "else" statement is used in conjunction with the "if" statement to provide an alternative block of code to be executed when the initial condition is false.
+// Example of if-else condition
+let temperature = 22;
+
+if (temperature > 30) {
+    console.log("It's hot outside!");
+} else {
+    console.log("It's not too hot.");
+}
+
+Nested IF-Else and Else-If:
+Question: Explain the concept of nested "if-else" statements and "else if" conditions.
+Answer: Nested "if-else" statements involve placing one or more "if-else" constructs inside another. "Else if" conditions allow for multiple conditional checks in sequence, executing the block associated with the first true condition.
+// Example of nested if-else and else-if conditions
+let time = 14;
+
+if (time < 12) {
+    console.log("Good morning!");
+} else if (time < 18) {
+    console.log("Good afternoon!");
+} else {
+    console.log("Good evening!");
+}
+
+Switch-Case:
+Question: How does a "switch-case" statement differ from multiple "if-else" conditions?
+Answer: A "switch-case" statement is used when there are multiple possible conditions, each leading to a different code block. It's more concise than chaining multiple "if-else" statements and is often easier to read.
+// Example of a switch-case statement
+let dayOfWeek = 3;
+
+switch (dayOfWeek) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    // ... other cases ...
+    default:
+        console.log("Invalid day");
+}
+
+Ternary Conditions:
+Question: What is a ternary operator, and when would you use it?
+Answer: The ternary operator is a concise way to write an "if-else" statement in a single line. It takes the form of condition ? true-expression : false-expression. It is useful for short, simple conditional assignments.
+Data Types - NaN, Undefined, Null:
+// Example of a ternary condition
+let isRaining = true;
+
+let weatherMessage = isRaining ? "Bring an umbrella" : "Enjoy the weather";
+console.log(weatherMessage);
+
+NaN (Not a Number):
+Question: What does NaN represent, and in which situations might it occur?
+Answer: NaN stands for "Not a Number." It is a special value in JavaScript (and some other programming languages) used to represent an undefined or unrepresentable value resulting from mathematical operations like division by zero or invalid conversions.
+// Example of NaN
+let result = 10 / "apple";  // NaN
+console.log(result);        // NaN
+
+Undefined:
+Question: Differentiate between null and undefined in JavaScript.
+Answer: In JavaScript, undefined represents a variable that has been declared but not assigned a value. null, on the other hand, is an assignment value representing the absence of any object value.
+// Example of undefined
+let x;
+console.log(x);  // undefined
+
+// Another example
+let y;
+if (y === undefined) {
+    console.log("Variable is undefined");
+}
+
+Null:
+Question: When would you explicitly assign a variable the value of null?
+Answer: You might assign a variable the value of null when you want to explicitly indicate that it has no meaningful value or that it does not point to any object or reference.
+// Example of null
+let car = null;
+
+if (car === null) {
+    console.log("No car selected");
+}
+
