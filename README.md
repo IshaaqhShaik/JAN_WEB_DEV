@@ -34,7 +34,7 @@ Class - 2: Git Practical
 
     Task: Getting handson with the commands discussed.
 
-Create a branch from main in the local repo and  add the changes.
+    Create a branch from main in the local repo and  add the changes.
 
 Class - 3: Git Advanced practical
 
