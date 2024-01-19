@@ -14,7 +14,7 @@ Class - 1: Git Theory
 
     Installation of the Git on various Operating Systems.
 
-Task: Prepare a practical cheatsheet of workflow's on Git Life cycle, Recording changes to repository, 
+    Task: Prepare a practical cheatsheet of workflow's on Git Life cycle, Recording changes to repository,
 
 Class - 2: Git Practical
 
@@ -22,29 +22,29 @@ Class - 2: Git Practical
         git add filename.txt, git status, git add ., git commit -m "commit message", git push
 
     Git branches:
-        git branch, git checkout ., git checkout branch_name, git checkout -b branch_name, 
+        git branch, git checkout ., git checkout branch_name, git checkout -b branch_name,
 
-    Topics: 
+    Topics:
 
         Feature branch workflow
 
         Importance of using branching
 
-        git add . vs  git add filename, git checkout -b vs git checkout branch vs git checkout ., 
+        git add . vs  git add filename, git checkout -b vs git checkout branch vs git checkout .,
 
-Task: Getting handson with the commands discussed.
+    Task: Getting handson with the commands discussed.
 
-    Create a branch from main in the local repo and  add the changes.
+Create a branch from main in the local repo and  add the changes.
 
-    Class - 3: Git Advanced practical
+Class - 3: Git Advanced practical
 
     Git Commands:
         git fetch, git stash, git pop, git pull, git merge, git rebase, git log.
 
-    Topics: 
+    Topics:
         git Rebase vs git Merge, git Pull vs git fetch.
 
-        Class - 4: 
+Class - 4:
 
     Git Commands:
         git revert, git reset.
