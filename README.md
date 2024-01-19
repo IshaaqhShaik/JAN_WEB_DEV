@@ -30,11 +30,11 @@ Class - 2: Git Practical
 
         Importance of using branching
 
-        add . vs add filename, checkout -b vs checkout branch vs checkout ., 
+        git add . vs  git add filename, git checkout -b vs git checkout branch vs git checkout ., 
 
 Task: Getting handson with the commands discussed.
 
-    Create a branch on the repo provided add the changes.
+    Create a branch from main in the local repo and  add the changes.
 
     Class - 3: Git Advanced practical
 
@@ -42,7 +42,7 @@ Task: Getting handson with the commands discussed.
         git fetch, git stash, git pop, git pull, git merge, git rebase, git log.
 
     Topics: 
-        Rebase vs Merge, Pull vs fetch.
+        git Rebase vs git Merge, git Pull vs git fetch.
 
         Class - 4: 
 
