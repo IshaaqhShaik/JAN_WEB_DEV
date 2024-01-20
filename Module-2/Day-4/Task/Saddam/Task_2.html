@@ -13,11 +13,11 @@
             let str = " ";
             for (let j = 0; j <= 7; j++) {
 
-                if (j >= i && j < (7 - i)) {
+                if (j >= i && j <= (7 - i)) {
                     str += "*";
                 }
                 else {
-                    str += " ";
+                    str += "-";
                 }
             }
             console.log(str);
