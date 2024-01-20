@@ -1,0 +1,18 @@
+Task1:
+Given two arrays A1 = [‘d’,’e’,’f’,1,2,3,’A’,’B’,’C’], A2=[‘D’,’E’,’F’,4,5,6,’a’,’b’,’c’]
+Use slice and splice or any other array functions
+make the result as A1=[1,2,3,4,5,6] A2=[‘A’,’B’,’C’,’D’,’E’,’F’] A3=[‘a’,’b’,’c’,’d’,’e’,’f’]
+
+
+Task2: Print the following stars pattern using for loop
+* * * * *
+  * * *
+    *
+
+Task3:
+ please refer task3.png
+	Loop through  the following Array
+	Print three arrays which has
+	A1=[<name1>,<name2>.....]
+    A2=[<cmpny1>,<cmpny2>.....]
+	A3=[<des1>,<des2>]
