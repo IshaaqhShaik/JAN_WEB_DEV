@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const A1 = ['d', 'e', 'f,', 1, 2, 3, 'A', 'B', 'C'];
+        const A2 = ['D', 'E', 'F', 4, 5, 6, 'a', 'b', 'c'];
+
+        let upperCasea1 = A1.slice(6, 9);
+        console.log(upperCasea1);
+        let upperCasea2 = A2.slice(0, 3);
+        console.log(upperCasea2);
+
+        let UpperCase = upperCasea1.concat(upperCasea2);
+        console.log(UpperCase);
+
+
+        let lowerCasea1 = A1.slice(0, 3);
+        console.log(lowerCasea1);
+        let lowerCasea2 = A2.slice(6, 9);
+        console.log(lowerCasea2);
+
+        let LowerCase = lowerCasea2.concat(lowerCasea1);
+        console.log(LowerCase);
+
+        let numbera1 = A1.slice(3, 6);
+        console.log(numbera1);
+        let numbera2 = A2.slice(3, 6);
+        console.log(numbera2);
+
+        let Number = numbera1.concat(numbera2);
+        console.log(Number);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

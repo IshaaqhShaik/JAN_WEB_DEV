@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const list = [
+            {
+                name: 'Michael scott',
+                company: 'Dunder Mufflin',
+                designation: 'Regional Manager',
+                show: 'The office'
+            },
+            {
+                name: 'Barney stinson',
+                company: 'Golaith National Bank',
+                designation: 'Please',
+                show: 'How I MET YOUR MOTHER'
+            },
+            {
+                name: 'Jake Peralta',
+                company: 'NYPD',
+                designation: 'Detective',
+                show: 'Brooklyn 99'
+
+            }
+
+        ]
+        const name = [];
+        const company = [];
+        const designation = [];
+        const show = [];
+        for (i = 0; i < list.length; i++) {
+            name.push(list[i].name);
+            company.push(list[i].company);
+            designation.push(list[i].designation);
+            show.push(list[i].show);
+
+        }
+        console.log(name);
+        console.log(company);
+        console.log(designation);
+        console.log(show);
+    </script>
+</body>
+
+</html>
