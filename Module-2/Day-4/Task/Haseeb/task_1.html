@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   
+      const A1 = ['d', 'e', 'f', 1, 2, 3, 'A', 'B', 'C'];
+      const A2 = ['D', 'E', 'F', 4, 5, 6, 'a', 'b', 'c'];
+
+      let numbers = A1.slice(3, 6).concat(A2.slice(3,6));
+
+      let smallcase = A2.slice(6,9).concat(A1.slice(0, 3));
+
+      let upcase = A1.slice(6,9).concat(A2.slice(0, 3));
+
+       console.log(upcase);
+       console.log(smallcase);
+       console.log(numbers);
+
+     
+      // const numbersA1 = A1.slice(3, 6);
+      
+      // const uppercaseA2 = A1.slice(6, 9);
+
+      // const lowercaseA1 = A1.slice(0, 3);
+
+      
+      // const A1Result = numbersA1.concat(A2.slice(3, 6));
+      // const A2Result = uppercaseA2.concat(A1.slice(0 ,3));
+      // const A3Result = lowercaseA1.concat
+      
+
+      // console.log('A1:', A1Result);
+      // console.log('A2:', A2Result);
+      
+
+   
+  </script>
+</body>
+</html>
