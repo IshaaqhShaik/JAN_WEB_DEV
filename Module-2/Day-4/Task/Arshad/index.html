@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array_1 = ["d","e","f",1,2,3,"A",'B','C'];
+        var array_2=['D','E','F',4,5,6,'a','b','c'];
+        var numeric_Array=[];
+        var capital_Array=[];
+        var small_Array=[];
+        let full_array = [ array_1,array_2];
+
+        full_array.map((temp_array)=> {
+            if(Array.isArray(temp_array)) {
+                    [temp_array.map((ele) => {
+                    if( typeof(ele) === 'number') {
+                      numeric_Array.push(ele)
+                    } else {
+                        if(ele.charCodeAt() >= 65 && ele.charCodeAt() <= 90) {
+                            capital_Array.push(ele);
+                        } else if (ele.charCodeAt() >= 97 && ele.charCodeAt() <= 122 ) {
+                            small_Array.push(ele);
+                        }
+                    }
+                })];
+            }
+        });
+
+        console.log("numeric array is");
+        console.log(numeric_Array);
+        console.log("capital letters array is");
+        console.log(capital_Array);
+        console.log("small letters array is");
+        console.log(small_Array);
+
+
+    </script>
+</body>
+</html>
