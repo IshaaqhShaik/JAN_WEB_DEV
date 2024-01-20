@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const list = [{
+                    name : 'Haseeb',
+                    company : 'Risa',
+                    designation : 'Sr.Front-end Developer',
+                    show : 'How We met in Office'
+                  },
+                  {
+                    name : 'Farooq',
+                    company : 'Dxc',
+                    designation : 'Sr.Back-end Developer',
+                    show : 'How I met your mother'
+                  },
+                  {
+                    name : 'Saddam',
+                    company : 'HCL',
+                    designation : 'Sr.Developer',
+                    show : 'How I met your Dad'
+                  }];
+                   
+                  let namesArray = [];
+                  let companiesArray = [];
+                  let designationsArray = [];
+
+                  for (let i = 0; i < list.length;i++)
+                  {
+                    namesArray.push(list[i].name);
+                    companiesArray.push(list[i].company);
+                    designationsArray.push(list[i].designation);
+                  }
+                   console.log(namesArray);
+                   console.log(companiesArray);
+                   console.log(designationsArray);
+                  
+  </script>
+</body>
+</html>
