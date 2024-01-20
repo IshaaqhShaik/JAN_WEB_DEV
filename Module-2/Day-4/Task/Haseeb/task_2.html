@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // inverted traingle pattern
+    // "-" are spaces and "*" are the stars
+
+    for(let row=0; row < 4; row++){
+      let str = "";
+      for(let col=0; col<7; col++){
+        if(col >= row && col < (7 - row)){
+          str += "*";
+        }else{
+          str += "-";
+        }   
+      }
+      console.log(str);
+    }
+
+    for(let row=0; row < 5; row++){
+      let str = "";
+      for(let col=0; col<5; col++){
+        if(col < row){
+          str += "*";
+        }else{
+          str += "-"
+        }
+      }
+      console.log(str);
+    }
+
+    for(let row=0; row < 5; row++){
+      let str = "";
+      for(let col=0; col<5; col++){
+        if(col > (5 - row)){
+          str += "-"
+        }else{
+          str += "*";
+        }
+      }
+      console.log(str);
+    }
+    
+  </script>
+</body>
+</html>
