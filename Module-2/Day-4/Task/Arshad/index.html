@@ -16,7 +16,7 @@
 
         full_array.map((temp_array)=> {
             if(Array.isArray(temp_array)) {
-                    [temp_array.map((ele) => {
+                    temp_array.map((ele) => {
                     if( typeof(ele) === 'number') {
                       numeric_Array.push(ele)
                     } else {
@@ -26,7 +26,7 @@
                             small_Array.push(ele);
                         }
                     }
-                })];
+                });
             }
         });
 
@@ -36,6 +36,45 @@
         console.log(capital_Array);
         console.log("small letters array is");
         console.log(small_Array);
+
+
+
+
+//Task 3
+ var givenObject =[{
+                    name : 'Haseeb',
+                    company : 'Risa',
+                    designation : 'Sr.Front-end Developer',
+                    show : 'How We met in Office'
+                  },
+                  {
+                    name : 'Farooq',
+                    company : 'Dxc',
+                    designation : 'Sr.Back-end Developer',
+                    show : 'How I met your mother'
+                  },
+                  {
+                    name : 'Saddam',
+                    company : 'HCL',
+                    designation : 'Sr.Developer',
+                    show : 'How I met your Dad'
+                  }];
+
+                  var namesArray = [];
+                  var companyArray=[];
+                  var designationArray =[];
+for(let obj of givenObject ) {
+    namesArray.push(obj.name);
+    companyArray.push(obj.company);
+    designationArray.push(obj.designation);
+}
+
+console.log("Names");
+console.log(namesArray);
+console.log("companies");
+console.log(companyArray);
+console.log("designations");
+console.log(designationArray);
 
 
     </script>
