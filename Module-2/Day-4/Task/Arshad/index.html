@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        var array_1 = ["d","e","f",1,2,3,"A",'B','C'];
-        var array_2=['D','E','F',4,5,6,'a','b','c'];
-        var numeric_Array=[];
-        var capital_Array=[];
-        var small_Array=[];
-        let full_array = [ array_1,array_2];
+      var array_1 = ["d", "e", "f", 1, 2, 3, "A", "B", "C"];
+      var array_2 = ["D", "E", "F", 4, 5, 6, "a", "b", "c"];
+      var numeric_Array = [];
+      var capital_Array = [];
+      var small_Array = [];
+      let full_array = [array_1, array_2];
 
-        full_array.map((temp_array)=> {
-            if(Array.isArray(temp_array)) {
-                    temp_array.map((ele) => {
-                    if( typeof(ele) === 'number') {
-                      numeric_Array.push(ele)
-                    } else {
-                        if(ele.charCodeAt() >= 65 && ele.charCodeAt() <= 90) {
-                            capital_Array.push(ele);
-                        } else if (ele.charCodeAt() >= 97 && ele.charCodeAt() <= 122 ) {
-                            small_Array.push(ele);
-                        }
-                    }
-                });
+      full_array.map((temp_array) => {
+        if (Array.isArray(temp_array)) {
+          temp_array.map((ele) => {
+            if (typeof ele === "number") {
+              numeric_Array.push(ele);
+            } else {
+              if (ele.charCodeAt() >= 65 && ele.charCodeAt() <= 90) {
+                capital_Array.push(ele);
+              } else if (ele.charCodeAt() >= 97 && ele.charCodeAt() <= 122) {
+                small_Array.push(ele);
+              }
             }
-        });
+          });
+        }
+      });
 
-        console.log("numeric array is");
-        console.log(numeric_Array);
-        console.log("capital letters array is");
-        console.log(capital_Array);
-        console.log("small letters array is");
-        console.log(small_Array);
+      console.log("numeric array is");
+      console.log(numeric_Array);
+      console.log("capital letters array is");
+      console.log(capital_Array);
+      console.log("small letters array is");
+      console.log(small_Array);
 
+      //Task 3
+      var givenObject = [
+        {
+          name: "Haseeb",
+          company: "Risa",
+          designation: "Sr.Front-end Developer",
+          show: "How We met in Office",
+        },
+        {
+          name: "Farooq",
+          company: "Dxc",
+          designation: "Sr.Back-end Developer",
+          show: "How I met your mother",
+        },
+        {
+          name: "Saddam",
+          company: "HCL",
+          designation: "Sr.Developer",
+          show: "How I met your Dad",
+        },
+      ];
 
+      var namesArray = [];
+      var companyArray = [];
+      var designationArray = [];
+      for (let obj of givenObject) {
+        namesArray.push(obj.name);
+        companyArray.push(obj.company);
+        designationArray.push(obj.designation);
+      }
 
-
-//Task 3
- var givenObject =[{
-                    name : 'Haseeb',
-                    company : 'Risa',
-                    designation : 'Sr.Front-end Developer',
-                    show : 'How We met in Office'
-                  },
-                  {
-                    name : 'Farooq',
-                    company : 'Dxc',
-                    designation : 'Sr.Back-end Developer',
-                    show : 'How I met your mother'
-                  },
-                  {
-                    name : 'Saddam',
-                    company : 'HCL',
-                    designation : 'Sr.Developer',
-                    show : 'How I met your Dad'
-                  }];
-
-                  var namesArray = [];
-                  var companyArray=[];
-                  var designationArray =[];
-for(let obj of givenObject ) {
-    namesArray.push(obj.name);
-    companyArray.push(obj.company);
-    designationArray.push(obj.designation);
-}
-
-console.log("Names");
-console.log(namesArray);
-console.log("companies");
-console.log(companyArray);
-console.log("designations");
-console.log(designationArray);
-
-
+      console.log("Names");
+      console.log(namesArray);
+      console.log("companies");
+      console.log(companyArray);
+      console.log("designations");
+      console.log(designationArray);
     </script>
-</body>
+  </body>
 </html>
