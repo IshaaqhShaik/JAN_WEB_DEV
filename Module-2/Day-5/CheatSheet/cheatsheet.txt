@@ -1,0 +1,156 @@
+Function:
+A function is a reusable block of code that performs a specific task 
+or set of tasks. It allows you to divide your code into smaller, more manageable pieces and makes it easier to organize and maintain. Functions can take input parameters,
+perform some actions, and return a result.
+
+Function Declarations:
+A function declaration is a way to define a function in JavaScript. It consists of the function keyword followed by the name of the function,
+a list of parameters in parentheses, and the function body enclosed in curly braces. Here's an example:
+function add(a, b) {
+    return a + b;
+}
+Function Definition:
+Function definition refers to the process of creating a function by specifying its name, parameters, and the code that should be executed when the function is called. Function declarations and expressions are both ways to define functions.
+
+IIFE (Immediately Invoked Function Expression):
+
+An IIFE is a function that is declared and executed immediately after being defined. It is typically used to create a private scope for variables and functions to avoid polluting the global scope. Here's an example:
+
+javascript
+(function() {
+    // code here
+})();
+Function Parameters:
+
+Function parameters are variables that are used to receive input values when a function is called. They are listed in the function declaration and act as placeholders for the values that will be passed to the function.
+
+javascript
+function multiply(a, b) {
+    return a * b;
+}
+In this example, a and b are parameters.
+
+Function Expressions:
+
+A function expression is another way to define a function in JavaScript. Instead of using the function declaration syntax, you assign an anonymous function to a variable. Here's an example:
+
+javascript
+var multiply = function(a, b) {
+    return a * b;
+};
+Arrow Function vs Normal Function:
+
+Arrow functions are a concise syntax introduced in ES6 for writing anonymous functions. They have a shorter syntax compared to traditional function expressions and share the same lexical this as their surrounding code. Here's a comparison:
+
+javascript
+// Normal Function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow Function
+const add = (a, b) => a + b;
+Arrow functions are often preferred for short, simple functions.
+
+Global Variable and Local Variable:
+
+Global variables are declared outside of any function or block and are accessible throughout the entire program. Local variables are declared inside a function or block and are only accessible within that specific scope. Using local variables helps prevent unintended interference between different parts of your code.
+
+javascript
+// Global Variable
+var globalVar = 10;
+function exampleFunction() {
+    // Local Variable
+    var localVar = 5;
+    console.log(globalVar); // Accessing global variable
+}
+exampleFunction();
+console.log(localVar); // This will result in an error because localVar is not defined globally.
+
+                            //InterView Qustions and Answers
+
+Function:
+Question 1: Can you explain what a function is in JavaScript?
+Answer:
+In JavaScript, a function is a reusable block of code that performs a specific task or set of tasks. It allows for modular programming, making code more organized and maintainable.
+
+Function Declarations:
+Question 2: How do you declare a function in JavaScript?
+Answer:
+A function in JavaScript can be declared using the function keyword followed by the function name, a list of parameters in parentheses, and the function body enclosed in curly braces.
+
+Example:
+javascript
+function add(a, b) {
+    return a + b;
+}
+
+Function Definition:
+Question 3: What does function definition refer to in JavaScript?
+Answer:
+Function definition in JavaScript refers to the process of creating a function by specifying its name, parameters, and the code that should be executed when the function is called. It encompasses both function declarations and function expressions.
+
+IIFE (Immediately Invoked Function Expression):
+Question 4: Explain what an IIFE is and why you might use it in JavaScript.
+Answer:
+An IIFE, or Immediately Invoked Function Expression, is a function that is declared and executed immediately after being defined. It is often used to create a private scope for variables and functions, preventing them from polluting the global scope.
+
+Example:
+javascript
+(function() {
+    // code here
+})();
+Function Parameters:
+
+Question 5: What are function parameters, and how are they used?
+Answer:
+Function parameters are variables listed in the function declaration that act as placeholders for values passed to the function when it is called. They allow a function to accept input and perform actions based on that input.
+
+Example:
+javascript
+function multiply(a, b) {
+    return a * b;
+}
+Function Expressions:
+
+Question 6: How does a function expression differ from a function declaration?
+Answer:
+A function expression is another way to define a function by assigning an anonymous function to a variable. Unlike function declarations, function expressions can be used as part of an expression, passed as arguments to other functions, and are not hoisted.
+
+Example:
+javascript
+var multiply = function(a, b) {
+    return a * b;
+};
+Arrow Function vs Normal Function:
+
+Question 7: What are the key differences between arrow functions and normal functions in JavaScript?
+Answer:
+Arrow functions are a concise syntax for writing functions in JavaScript. They have a shorter syntax, share the same lexical this as their surrounding code, and are often preferred for short, simple functions.
+
+Example:
+javascript
+// Normal Function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow Function
+const add = (a, b) => a + b;
+Global Variable and Local Variable:
+Question 8: Explain the difference between global variables and local variables in JavaScript.
+Answer:
+Global variables are declared outside of any function or block and are accessible throughout the entire program. Local variables are declared inside a function or block and are only accessible within that specific scope.
+
+Example:
+javascript
+// Global Variable
+var globalVar = 10;
+
+function exampleFunction() {
+    // Local Variable
+    var localVar = 5;
+    console.log(globalVar); // Accessing global variable
+}
+exampleFunction();
+console.log(localVar); // This will result in an error because localVar
