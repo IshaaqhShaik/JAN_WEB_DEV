@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function invertedTriangle(rows, columns)
+       {
+        for (let i = 0; i < rows; i++) {
+          let row = "";
+          for (let j = 0; j < columns; j++)
+           {
+            if (j >= i && j < columns - i)
+             {
+              row += "*";
+            } else {
+              row += "-";
+            }
+          }
+          console.log(row);
+        }
+       }
+      invertedTriangle(4, 7);
+    </script>
+  </body>
 </html>
