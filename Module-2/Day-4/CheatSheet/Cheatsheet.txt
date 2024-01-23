@@ -1,0 +1,108 @@
+Loop: A loop is a sequence of instruction s that is continually repeated until a certain condition is reached.
+
+Different Loops:
+  1. While
+  2. Do While
+  3. For
+  4. For of
+  5. For in
+
+
+While Loop:	In while loop, a condition is evaluated before processing a body of the loop. If a condition is true then and only then the body of a loop is executed.
+    syntax: while (condition) {
+               statements;
+                }
+
+Do-While Loop: In a do…while loop, the condition is always executed after the body of a loop. It is also called an exit-controlled loop.
+    syntax: do {
+                   statements
+                  } while (expression);
+
+For Loop: In a for loop, the initial value is performed only once, then the condition tests and compares the counter to a fixed value after each iteration, stopping the for loop when false is returned.
+    syntax: for (initial value; condition; incrementation or decrementation ) 
+               {
+                 statements;
+                }
+
+The For Of Loop: The JavaScript for of statement loops through the values of an iterable object.
+                It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more.
+    syntax:  for (variable of iterable) {
+             // code block to be executed
+             }
+
+The For In Loop: The JavaScript for in statement loops through the properties of an Object.
+    syntax: for (key in object) {
+             // code block to be executed
+             }
+ 
+For each: The forEach() method calls a function for each element in an array.
+          The forEach() method is not executed for empty elements.
+    syntax: array.forEach(function(currentValue, index, arr), thisValue)
+
+Array: An array is a special variable, which can hold more than one value:
+    syntax: const cars = ["Saab", "Volvo", "BMW"];
+
+Accessing array: You access an array element by referring to the index number:
+    syntax: const cars = ["Saab", "Volvo", "BMW"];
+        let car = cars[0];
+
+The length Property: The length property of an array returns the length of an array (the number of array elements).
+
+    Example:const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let length = fruits.length;
+
+concat():	Joins arrays and returns an array with the joined arrays.
+    ex: const arr1 = ["Cecilie", "Lone"];
+    const arr2 = ["Emil", "Tobias", "Linus"];
+    const children = arr1.concat(arr2);
+
+push():	Adds new elements to the end of an array, and returns the new length.
+    ex: const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.push("Kiwi");
+
+slice(): Selects a part of an array, and returns the new array.
+    ex: const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        const citrus = fruits.slice(1, 3);
+
+splice(): Adds/Removes elements from an array.
+    ex: const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+        fruits.splice(2, 2);
+
+Object: The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities.
+        Objects are used to store key/value (name/value) collections.
+    syntax:const list = [
+           {
+            name:'Michael scott',
+            company:'Dunder Mufflin',
+            designation:'Regional Manager',
+            show:'The office'
+           },
+           {
+            name:'Barney stinson',
+            company:'Golaith National Bank',
+            designation:'Please',
+            show:'How I MET YOUR MOTHER'
+           },
+           {
+            name:'Jake Peralta',
+            company:'NYPD',
+            designation:'Detective',
+            show:'Brooklyn 99'
+           }
+          ]
+
+AccesSing objects from the arrays:
+    syntax: list[0].name  
+       o/p: Michael scott
+
+
+
+
+
+
+
+
+
+
+
+
