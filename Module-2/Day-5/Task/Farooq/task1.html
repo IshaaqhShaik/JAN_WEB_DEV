@@ -1,0 +1,13 @@
+// reverse string
+function reverse(str){
+  var a = "";
+  for(var i = 0; i < str.length/2; i++){
+    a = str[i];
+    str[i] = str[str.length-i-1];
+    str[str.length-i-1] = a;
+  }
+  return str;
+}
+
+var str = "abcdef";
+reverse(str);
