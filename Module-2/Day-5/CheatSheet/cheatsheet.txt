@@ -1,261 +1,156 @@
-Class Inheritance: Inheritance enables you to define a class that takes all the functionality from a parent class and allows you to add more.
-                   Using class inheritance, a class can inherit all the methods and properties of another class.
-                   Inheritance is a useful feature that allows code reusability.
-                   To use class inheritance, you use the 'extends' keyword. 
+Function:
+A function is a reusable block of code that performs a specific task 
+or set of tasks. It allows you to divide your code into smaller, more manageable pieces and makes it easier to organize and maintain. Functions can take input parameters,
+perform some actions, and return a result.
 
- Ex:// parent class
-    class Person { 
-    constructor(name) {
-        this.name = name;
-    }
+Function Declarations:
+A function declaration is a way to define a function in JavaScript. It consists of the function keyword followed by the name of the function,
+a list of parameters in parentheses, and the function body enclosed in curly braces. Here's an example:
+function add(a, b) {
+    return a + b;
+}
+Function Definition:
+Function definition refers to the process of creating a function by specifying its name, parameters, and the code that should be executed when the function is called. Function declarations and expressions are both ways to define functions.
 
-    greet() {
-        console.log(`Hello ${this.name}`);
-    }
-    }
+IIFE (Immediately Invoked Function Expression):
 
-    // inheriting parent class
-    class Student extends Person {
+An IIFE is a function that is declared and executed immediately after being defined. It is typically used to create a private scope for variables and functions to avoid polluting the global scope. Here's an example:
 
-    }
+javascript
+(function() {
+    // code here
+})();
+Function Parameters:
 
-     let student1 = new Student('Jack');
-      student1.greet();
+Function parameters are variables that are used to receive input values when a function is called. They are listed in the function declaration and act as placeholders for the values that will be passed to the function.
 
-  Output: Hello Jack
+javascript
+function multiply(a, b) {
+    return a * b;
+}
+In this example, a and b are parameters.
 
-JavaScript super() keyword: The super keyword used inside a child class denotes its parent class. 
- example: // parent class
-          class Person { 
-         constructor(name) {
-          this.name = name;
-          }
+Function Expressions:
 
-          greet() {
-          console.log(`Hello ${this.name}`);
-          }
-          }
+A function expression is another way to define a function in JavaScript. Instead of using the function declaration syntax, you assign an anonymous function to a variable. Here's an example:
 
-         // inheriting parent class
-         class Student extends Person {
+javascript
+var multiply = function(a, b) {
+    return a * b;
+};
+Arrow Function vs Normal Function:
 
-         constructor(name) {
-    
-         console.log("Creating student class");
-         
-         // call the super class constructor and pass in the name parameter
-         super(name);
-         }
+Arrow functions are a concise syntax introduced in ES6 for writing anonymous functions. They have a shorter syntax compared to traditional function expressions and share the same lexical this as their surrounding code. Here's a comparison:
 
-         }
+javascript
+// Normal Function
+function add(a, b) {
+    return a + b;
+}
 
-         let student1 = new Student('Jack');
-         student1.greet();
+// Arrow Function
+const add = (a, b) => a + b;
+Arrow functions are often preferred for short, simple functions.
 
-Overriding Method or Property: If a child class has the same method or property name as that of the parent class, it will use the methodand   property of the child class. This concept is called method overriding. 
- example: // parent class
-          class Person { 
-          constructor(name) {
-          this.name = name;
-         this.occupation = "unemployed";
-         }
-    
-         greet() {
-         console.log(`Hello ${this.name}.`);
-         }
- 
-         }
+Global Variable and Local Variable:
 
-         // inheriting parent class
-         class Student extends Person {
+Global variables are declared outside of any function or block and are accessible throughout the entire program. Local variables are declared inside a function or block and are only accessible within that specific scope. Using local variables helps prevent unintended interference between different parts of your code.
 
-          constructor(name) {
-        
-         // call the super class constructor and pass in the name parameter
-         super(name);
-        
-         // Overriding an occupation property
-         this.occupation = 'Student';
-         }
-    
-         // overriding Person's method
-         greet() {
-         console.log(`Hello student ${this.name}.`);
-         console.log('occupation: ' + this.occupation);
-        }
-        }
+javascript
+// Global Variable
+var globalVar = 10;
+function exampleFunction() {
+    // Local Variable
+    var localVar = 5;
+    console.log(globalVar); // Accessing global variable
+}
+exampleFunction();
+console.log(localVar); // This will result in an error because localVar is not defined globally.
 
-        let p = new Student('Jack');
-        p.greet();
+                            //InterView Qustions and Answers
 
-  Output:Hello student Jack.
-         occupation: Student
+Function:
+Question 1: Can you explain what a function is in JavaScript?
+Answer:
+In JavaScript, a function is a reusable block of code that performs a specific task or set of tasks. It allows for modular programming, making code more organized and maintainable.
 
-Try…Catch: A try…catch is a commonly used statement in various programming languages. Basically, it is used to handle the error-prone part of the code. It initially tests the code for all possible errors it may contain, then it implements actions to tackle those errors (if occur). A good programming approach is to keep the complex code within the try…catch statements.
+Function Declarations:
+Question 2: How do you declare a function in JavaScript?
+Answer:
+A function in JavaScript can be declared using the function keyword followed by the function name, a list of parameters in parentheses, and the function body enclosed in curly braces.
 
- try{} statement: Here, the code which needs possible error testing is kept within the try block. In case any error occur, it passes to the catch{} block for taking suitable actions and handle the error. Otherwise, it executes the code written within.
+Example:
+javascript
+function add(a, b) {
+    return a + b;
+}
 
- catch{} statement: This block handles the error of the code by executing the set of statements written within the block. This block contains either the user-defined exception handler or the built-in handler. This block executes only when any error-prone code needs to be handled in the try block. Otherwise, the catch block is skipped.
+Function Definition:
+Question 3: What does function definition refer to in JavaScript?
+Answer:
+Function definition in JavaScript refers to the process of creating a function by specifying its name, parameters, and the code that should be executed when the function is called. It encompasses both function declarations and function expressions.
 
- Note: catch {} statement executes only after the execution of the try {} statement. Also, one try block can contain one or more catch blocks.
+IIFE (Immediately Invoked Function Expression):
+Question 4: Explain what an IIFE is and why you might use it in JavaScript.
+Answer:
+An IIFE, or Immediately Invoked Function Expression, is a function that is declared and executed immediately after being defined. It is often used to create a private scope for variables and functions, preventing them from polluting the global scope.
 
- Syntax: try{  
-         expression; } //code to be written.  
-         catch(error){  
-         expression; } // code for handling the error.  
+Example:
+javascript
+(function() {
+    // code here
+})();
+Function Parameters:
 
-Throw Statement: Throw statements are used for throwing user-defined errors. User can define and throw their own custom errors. When throw statement is executed, the statements present after it will not execute. The control will directly pass to the catch block.
+Question 5: What are function parameters, and how are they used?
+Answer:
+Function parameters are variables listed in the function declaration that act as placeholders for values passed to the function when it is called. They allow a function to accept input and perform actions based on that input.
 
- Syntax: throw exception; 
+Example:
+javascript
+function multiply(a, b) {
+    return a * b;
+}
+Function Expressions:
 
- try…catch…throw syntax: try{  
-                         throw exception; // user can define their own exception  
-                         }  
-                         catch(error){  
-                         expression; }  // code for handling exception
+Question 6: How does a function expression differ from a function declaration?
+Answer:
+A function expression is another way to define a function by assigning an anonymous function to a variable. Unlike function declarations, function expressions can be used as part of an expression, passed as arguments to other functions, and are not hoisted.
 
-Try…catch…finally statements: Finally is an optional block of statements which is executed after the execution of try and catch statements. Finally block does not hold for the exception to be thrown. Any exception is thrown or not, finally block code, if present, will definitely execute. It does not care for the output too.
+Example:
+javascript
+var multiply = function(a, b) {
+    return a * b;
+};
+Arrow Function vs Normal Function:
 
- Syntax: try{  
-         expression;  
-         }  
-         catch(error){  
-         expression;  
-         }  
-        finally{  
-        expression; } //Executable code
+Question 7: What are the key differences between arrow functions and normal functions in JavaScript?
+Answer:
+Arrow functions are a concise syntax for writing functions in JavaScript. They have a shorter syntax, share the same lexical this as their surrounding code, and are often preferred for short, simple functions.
 
-Synchronous: As the name suggests synchronous means to be in a sequence, i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.
+Example:
+javascript
+// Normal Function
+function add(a, b) {
+    return a + b;
+}
 
- Example: In this example, we have shown the synchronous nature of JavaScript.
+// Arrow Function
+const add = (a, b) => a + b;
+Global Variable and Local Variable:
+Question 8: Explain the difference between global variables and local variables in JavaScript.
+Answer:
+Global variables are declared outside of any function or block and are accessible throughout the entire program. Local variables are declared inside a function or block and are only accessible within that specific scope.
 
-          document.write("Hi"); // First 
-          document.write("<br>");
- 
-          document.write("Mayukh");// Second 
-          document.write("<br>");
- 
-          document.write("How are you"); // Third
+Example:
+javascript
+// Global Variable
+var globalVar = 10;
 
- o/p: Hi
-      Mayukh
-      How are you
-
-  In the above code snippet, the first line of the code Hi will be logged first then the second line Mayukh will be logged and then after its completion, the third line will be logged How are you. So as we can see the codes work in a sequence. Every line of code waits for its previous one to get executed first and then it gets executed.
-
-Asynchronous: Asynchronous code allows the program to be executed immediately whereas the synchronous code will block further execution of the remaining code until it finishes the current one. This may not look like a big problem but when you see it in a bigger picture you realize that it may lead to delaying the User Interface.
-
- Example: In this example, we have shown the Asynchronous nature of JavaScript.
-
-          document.write("Hi");
-          document.write("<br>");
- 
-          setTimeout(() => {
-          document.write("Let us see what happens");
-         }, 2000);
- 
-         document.write("<br>");
-         document.write("End");
-         document.write("<br>");
-
- o/p: Hi
-      End
-      Let us see what happens
-
- So, what the code does is first it logs in Hi then rather than executing the setTimeout function it logs in End and then it runs the setTimeout function.
-
-Promise: The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
-
-  A Promise is in one of these states:
-
- pending: initial state, neither fulfilled nor rejected.
- fulfilled: meaning that the operation was completed successfully.
- rejected: meaning that the operation failed.
-
- Ex:new Promise((resolveOuter) => {
-   resolveOuter(
-     new Promise((resolveInner) => {
-       setTimeout(resolveInner, 1000);
-     }),
-    );
-   });
-
-  This promise is already resolved at the time when it's created (because the resolveOuter is called synchronously), but it is resolved with another promise, and therefore won't be fulfilled until 1 second later, when the inner promise fulfills. In practice, the "resolution" is often done behind the scenes and not observable, and only its fulfillment or rejection 
-
-Chained Promises: The methods Promise.prototype.then(), Promise.prototype.catch(), and Promise.prototype.finally() are used to associate further action with a promise that becomes settled. As these methods return promises, they can be chained.
-
-  The .then() method takes up to two arguments; the first argument is a callback function for the fulfilled case of the promise, and the second argument is a callback function for the rejected case. Each .then() returns a newly generated promise object, which can optionally be used for chaining; for example:
-
- Ex: const myPromise = new Promise((resolve, reject) => {
-     setTimeout(() => {
-     resolve("foo");
-     }, 300);
-     });
-
-    myPromise
-      .then(handleFulfilledA, handleRejectedA)
-      .then(handleFulfilledB, handleRejectedB)
-      .then(handleFulfilledC, handleRejectedC);
-  
-  Processing continues to the next link of the chain even when a .then() lacks a callback function. Therefore, a chain can safely omit every rejection callback function until the final .catch().
-
-  Handling a rejected promise in each .then() has consequences further down the promise chain. Sometimes there is no choice, because an error must be handled immediately. In such cases we must throw an error of some type to maintain error state down the chain. On the other hand, in the absence of an immediate need, it is simpler to leave out error handling until a final .catch() statement. A .catch() is really just a .then() without a slot for a callback function for the case when the promise is fulfilled.
-
-    myPromise
-      .then(handleFulfilledA)
-      .then(handleFulfilledB)
-      .then(handleFulfilledC)
-      .catch(handleRejectedAny);
-  
-  Using arrow functions for the callback functions, implementation of the promise chain might look something like this:
-    myPromise
-      .then((value) => `${value} and bar`)
-      .then((value) => `${value} and bar again`)
-      .then((value) => `${value} and again`)
-      .then((value) => `${value} and again`)
-      .then((value) => {
-      console.log(value);
-    })
-    .catch((err) => {
-     console.error(err);
-    });
-   
-  Note: For faster execution, all synchronous actions should preferably be done within one handler, otherwise it would take several ticks to execute all handlers in sequence.
-  
-  
-Promise concurrency: The Promise class offers four static methods to facilitate async task concurrency.
-
-Promise.all(): Fulfills when all of the promises fulfill; rejects when any of the promises rejects.
-
-Promise.allSettled(): Fulfills when all promises settle.
-
-Promise.any(): Fulfills when any of the promises fulfills; rejects when all of the promises reject.
-
-Promise.race(): Settles when any of the promises settles. In other words, fulfills when any of the promises fulfills; rejects when any of the promises rejects.
-
-Recursive Function: A recursive function is a function that calls itself somewhere within the body of the function. Below is a basic example of a recursive function.
-
- Ex: function recursiveFunc() {
-     // some code here... 
-     recursiveFunc()
-     }
-
- As you can see, the recursiveFunc function calls itself within the body of the function. It will repeat calling itself until the desired output is achieved.
-
- So how do you tell the function when to stop calling itself? You do that using a base condition.Once the base condition is met, the recursion ends.
-
-    function recursiveFunc() {
-    if(base condition) {
-     // stops recursion if condition is met
-     }
-     // else recursion continues
-     recurse();
-    }  
-
-
-The Three Parts of a Recursive Function: Every time you write a recursive function, three elements must be present. 
-  They are: The function definition.
-            The base condition.
-            The recursive call.
-
-  Let's see a simple example of a recursive function.
+function exampleFunction() {
+    // Local Variable
+    var localVar = 5;
+    console.log(globalVar); // Accessing global variable
+}
+exampleFunction();
+console.log(localVar); // This will result in an error because localVar
