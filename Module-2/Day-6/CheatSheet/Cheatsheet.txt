@@ -1,0 +1,261 @@
+Class Inheritance: Inheritance enables you to define a class that takes all the functionality from a parent class and allows you to add more.
+                   Using class inheritance, a class can inherit all the methods and properties of another class.
+                   Inheritance is a useful feature that allows code reusability.
+                   To use class inheritance, you use the 'extends' keyword. 
+
+ Ex:// parent class
+    class Person { 
+    constructor(name) {
+        this.name = name;
+    }
+
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
+    }
+
+    // inheriting parent class
+    class Student extends Person {
+
+    }
+
+     let student1 = new Student('Jack');
+      student1.greet();
+
+  Output: Hello Jack
+
+JavaScript super() keyword: The super keyword used inside a child class denotes its parent class. 
+ example: // parent class
+          class Person { 
+         constructor(name) {
+          this.name = name;
+          }
+
+          greet() {
+          console.log(`Hello ${this.name}`);
+          }
+          }
+
+         // inheriting parent class
+         class Student extends Person {
+
+         constructor(name) {
+    
+         console.log("Creating student class");
+         
+         // call the super class constructor and pass in the name parameter
+         super(name);
+         }
+
+         }
+
+         let student1 = new Student('Jack');
+         student1.greet();
+
+Overriding Method or Property: If a child class has the same method or property name as that of the parent class, it will use the methodand   property of the child class. This concept is called method overriding. 
+ example: // parent class
+          class Person { 
+          constructor(name) {
+          this.name = name;
+         this.occupation = "unemployed";
+         }
+    
+         greet() {
+         console.log(`Hello ${this.name}.`);
+         }
+ 
+         }
+
+         // inheriting parent class
+         class Student extends Person {
+
+          constructor(name) {
+        
+         // call the super class constructor and pass in the name parameter
+         super(name);
+        
+         // Overriding an occupation property
+         this.occupation = 'Student';
+         }
+    
+         // overriding Person's method
+         greet() {
+         console.log(`Hello student ${this.name}.`);
+         console.log('occupation: ' + this.occupation);
+        }
+        }
+
+        let p = new Student('Jack');
+        p.greet();
+
+  Output:Hello student Jack.
+         occupation: Student
+
+Try…Catch: A try…catch is a commonly used statement in various programming languages. Basically, it is used to handle the error-prone part of the code. It initially tests the code for all possible errors it may contain, then it implements actions to tackle those errors (if occur). A good programming approach is to keep the complex code within the try…catch statements.
+
+ try{} statement: Here, the code which needs possible error testing is kept within the try block. In case any error occur, it passes to the catch{} block for taking suitable actions and handle the error. Otherwise, it executes the code written within.
+
+ catch{} statement: This block handles the error of the code by executing the set of statements written within the block. This block contains either the user-defined exception handler or the built-in handler. This block executes only when any error-prone code needs to be handled in the try block. Otherwise, the catch block is skipped.
+
+ Note: catch {} statement executes only after the execution of the try {} statement. Also, one try block can contain one or more catch blocks.
+
+ Syntax: try{  
+         expression; } //code to be written.  
+         catch(error){  
+         expression; } // code for handling the error.  
+
+Throw Statement: Throw statements are used for throwing user-defined errors. User can define and throw their own custom errors. When throw statement is executed, the statements present after it will not execute. The control will directly pass to the catch block.
+
+ Syntax: throw exception; 
+
+ try…catch…throw syntax: try{  
+                         throw exception; // user can define their own exception  
+                         }  
+                         catch(error){  
+                         expression; }  // code for handling exception
+
+Try…catch…finally statements: Finally is an optional block of statements which is executed after the execution of try and catch statements. Finally block does not hold for the exception to be thrown. Any exception is thrown or not, finally block code, if present, will definitely execute. It does not care for the output too.
+
+ Syntax: try{  
+         expression;  
+         }  
+         catch(error){  
+         expression;  
+         }  
+        finally{  
+        expression; } //Executable code
+
+Synchronous: As the name suggests synchronous means to be in a sequence, i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.
+
+ Example: In this example, we have shown the synchronous nature of JavaScript.
+
+          document.write("Hi"); // First 
+          document.write("<br>");
+ 
+          document.write("Mayukh");// Second 
+          document.write("<br>");
+ 
+          document.write("How are you"); // Third
+
+ o/p: Hi
+      Mayukh
+      How are you
+
+  In the above code snippet, the first line of the code Hi will be logged first then the second line Mayukh will be logged and then after its completion, the third line will be logged How are you. So as we can see the codes work in a sequence. Every line of code waits for its previous one to get executed first and then it gets executed.
+
+Asynchronous: Asynchronous code allows the program to be executed immediately whereas the synchronous code will block further execution of the remaining code until it finishes the current one. This may not look like a big problem but when you see it in a bigger picture you realize that it may lead to delaying the User Interface.
+
+ Example: In this example, we have shown the Asynchronous nature of JavaScript.
+
+          document.write("Hi");
+          document.write("<br>");
+ 
+          setTimeout(() => {
+          document.write("Let us see what happens");
+         }, 2000);
+ 
+         document.write("<br>");
+         document.write("End");
+         document.write("<br>");
+
+ o/p: Hi
+      End
+      Let us see what happens
+
+ So, what the code does is first it logs in Hi then rather than executing the setTimeout function it logs in End and then it runs the setTimeout function.
+
+Promise: The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+  A Promise is in one of these states:
+
+ pending: initial state, neither fulfilled nor rejected.
+ fulfilled: meaning that the operation was completed successfully.
+ rejected: meaning that the operation failed.
+
+ Ex:new Promise((resolveOuter) => {
+   resolveOuter(
+     new Promise((resolveInner) => {
+       setTimeout(resolveInner, 1000);
+     }),
+    );
+   });
+
+  This promise is already resolved at the time when it's created (because the resolveOuter is called synchronously), but it is resolved with another promise, and therefore won't be fulfilled until 1 second later, when the inner promise fulfills. In practice, the "resolution" is often done behind the scenes and not observable, and only its fulfillment or rejection 
+
+Chained Promises: The methods Promise.prototype.then(), Promise.prototype.catch(), and Promise.prototype.finally() are used to associate further action with a promise that becomes settled. As these methods return promises, they can be chained.
+
+  The .then() method takes up to two arguments; the first argument is a callback function for the fulfilled case of the promise, and the second argument is a callback function for the rejected case. Each .then() returns a newly generated promise object, which can optionally be used for chaining; for example:
+
+ Ex: const myPromise = new Promise((resolve, reject) => {
+     setTimeout(() => {
+     resolve("foo");
+     }, 300);
+     });
+
+    myPromise
+      .then(handleFulfilledA, handleRejectedA)
+      .then(handleFulfilledB, handleRejectedB)
+      .then(handleFulfilledC, handleRejectedC);
+  
+  Processing continues to the next link of the chain even when a .then() lacks a callback function. Therefore, a chain can safely omit every rejection callback function until the final .catch().
+
+  Handling a rejected promise in each .then() has consequences further down the promise chain. Sometimes there is no choice, because an error must be handled immediately. In such cases we must throw an error of some type to maintain error state down the chain. On the other hand, in the absence of an immediate need, it is simpler to leave out error handling until a final .catch() statement. A .catch() is really just a .then() without a slot for a callback function for the case when the promise is fulfilled.
+
+    myPromise
+      .then(handleFulfilledA)
+      .then(handleFulfilledB)
+      .then(handleFulfilledC)
+      .catch(handleRejectedAny);
+  
+  Using arrow functions for the callback functions, implementation of the promise chain might look something like this:
+    myPromise
+      .then((value) => `${value} and bar`)
+      .then((value) => `${value} and bar again`)
+      .then((value) => `${value} and again`)
+      .then((value) => `${value} and again`)
+      .then((value) => {
+      console.log(value);
+    })
+    .catch((err) => {
+     console.error(err);
+    });
+   
+  Note: For faster execution, all synchronous actions should preferably be done within one handler, otherwise it would take several ticks to execute all handlers in sequence.
+  
+  
+Promise concurrency: The Promise class offers four static methods to facilitate async task concurrency.
+
+Promise.all(): Fulfills when all of the promises fulfill; rejects when any of the promises rejects.
+
+Promise.allSettled(): Fulfills when all promises settle.
+
+Promise.any(): Fulfills when any of the promises fulfills; rejects when all of the promises reject.
+
+Promise.race(): Settles when any of the promises settles. In other words, fulfills when any of the promises fulfills; rejects when any of the promises rejects.
+
+Recursive Function: A recursive function is a function that calls itself somewhere within the body of the function. Below is a basic example of a recursive function.
+
+ Ex: function recursiveFunc() {
+     // some code here... 
+     recursiveFunc()
+     }
+
+ As you can see, the recursiveFunc function calls itself within the body of the function. It will repeat calling itself until the desired output is achieved.
+
+ So how do you tell the function when to stop calling itself? You do that using a base condition.Once the base condition is met, the recursion ends.
+
+    function recursiveFunc() {
+    if(base condition) {
+     // stops recursion if condition is met
+     }
+     // else recursion continues
+     recurse();
+    }  
+
+
+The Three Parts of a Recursive Function: Every time you write a recursive function, three elements must be present. 
+  They are: The function definition.
+            The base condition.
+            The recursive call.
+
+  Let's see a simple example of a recursive function.
