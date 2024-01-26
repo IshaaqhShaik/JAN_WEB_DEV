@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        constructor(livesOnLand) {
+          this.livesOnLand=livesOnLand;
+        }
+        sleepsAt() {
+          console.log("Sleeps when its tired");
+        }
+      }
+      class Monkey extends Animal {
+        constructor(livesOnLand,eatingStyle) {
+          super(livesOnLand);
+          this.eatingStyle = eatingStyle;
+        }
+        wayToEat() {
+          console.log("Money eats with hand");
+        }
+      }
+      class Human extends Monkey {
+        constructor(livesOnLand, eatingStyle, talk) {
+          super(livesOnLand, eatingStyle);
+          this.talk = talk;
+        }
+        speak() {
+          console.log(`Human can speak many malti languages ${this.talk}`);
+        }
+      }
+      const animal = new Animal("Lion");
+      animal.sleepsAt();
+
+      const monkey = new Monkey("Black", 25);
+      monkey.sleepsAt();
+      monkey.wayToEat();
+
+      const human = new Human("Asians", 0, " like - English , Telugu , Hindi" );
+      human.sleepsAt();
+      human.wayToEat();
+      human.speak();
+    </script>
+  </body>
+</html>
