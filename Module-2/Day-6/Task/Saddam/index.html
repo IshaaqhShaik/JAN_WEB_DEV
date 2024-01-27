@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Task1
+
+        class Animal {
+            constructor(breed) {
+                this.breed = breed;
+            }
+
+            hunting() {
+                console.log("Goes for hunting, whenever it feels hungry");
+            }
+        }
+
+        class Monkey extends Animal {
+            constructor(breed, tailLength) {
+                super(breed);
+                this.tailLength = tailLength;
+            }
+
+            climbTree() {
+                console.log("It is easy for a monkey to climb a tree");
+            }
+        }
+
+        class Human extends Monkey {
+            constructor(breed, tailLength, language) {
+                super(breed, tailLength);
+                this.language = language;
+            }
+
+            speak() {
+                console.log(`Human is speaking ${this.language}`);
+            }
+        }
+
+        const animal = new Animal("Mammal");
+        animal.hunting();
+
+        const monkey = new Monkey("langur", 25);
+        monkey.hunting();
+        monkey.climbTree();
+
+        const human = new Human("Asians", 0, "English");
+        human.hunting();
+        human.climbTree();
+        human.speak();
+
+    </script>
+</body>
+
+</html>
