@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkCondition(value) {
+        return new Promise((resolve, reject) => {
+          if (value === true) {
+            resolve("Condition resolved");
+          } else {
+            reject(new Error("Condition rejected"));
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
