@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // TASK 1
+     class Animal {
+        constructor(shout) {
+             this.shout = shout;
+            }
+         speak() {
+              console.log("It's an animal shout");
+              }
+         }
+     class Monkey extends Animal {
+         constructor(shout, growling) {
+            super(shout);
+            this.growling = growling;
+           }
+        speaks() {
+            console.log("growling");
+              }
+           }
+        const animal = new Animal();
+        animal.speak();
+        const monkey = new Monkey();
+        monkey.speaks();
+
+    // TASK 2
+
+     const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+     const fetchData = async () =>{
+          try {
+              await delay(2000); 
+                  const response = { status: '200', users: { id: 1, name: 'Haseeb' }};
+                  if (value === 200) {
+                    resolve("{users: {id: 1, name: 'Haseeb}");
+                  } else {
+                    reject(new Error({error: "try again"}));
+                   }
+                  }
+    
+    </script>
+  </body>
+</html>
