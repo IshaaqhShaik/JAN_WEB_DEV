@@ -1,0 +1,144 @@
+HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+If we want to open the browser in the new tab?
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The target Attribute</h2>
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
+<p>If target="_blank", the link will open in a new browser window or tab.</p>
+
+</body>
+</html>
+
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Link to an Email Address</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+<p><a href="mailto:gollapallishaikfarooq.com">Open Farooq mail email</a></p>
+
+</body>
+</html>
+
+Button link<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+</body>
+</html>
+
+HTML Lists
+
+HTML lists allow web developers to group a set of related items in lists.
+An unordered HTML list:
+
+.Item
+.Item
+.Item
+.Item
+
+An ordered HTML list:
+
+1.First item
+2.Second item
+3.Third item
+4.Fourth item
+
+Web Storage concepts and usage
+The two mechanisms within Web Storage are as follows:
+
+sessionStorage maintains a separate storage area for each given origin that's available for the duration of the page session (as long as the browser is open, including page reloads and restores).
+Stores data only for a session, meaning that the data is stored until the browser (or tab) is closed.
+Data is never transferred to the server.
+Storage limit is larger than a cookie (at most 5MB).
+localStorage does the same thing, but persists even when the browser is closed and reopened.
+Stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser cache / Locally Stored Data.
+Storage limit is the maximum amongst the two.
+
+
+Local Storage:
+The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year.
+example of Local storage:
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+</body>
+</html>
+
+Session Storage:
+The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.
+
+The following example counts the number of times a user has clicked a button, in the current session:
+
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+
+</body>
+</html>
+
+
+
+
