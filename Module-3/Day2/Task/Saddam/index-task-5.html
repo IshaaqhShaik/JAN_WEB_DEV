@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+
+            <li id="loginBtn"><button id="loginLogoutBtn">Login</button></li>
+        </ul>
+    </nav>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginLogoutBtn = document.getElementById('loginLogoutBtn');
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+            if (isLoggedIn === 'true') {
+                loginLogoutBtn.textContent = 'Logout';
+            } else {
+                loginLogoutBtn.textContent = 'Login';
+            }
+
+            loginLogoutBtn.addEventListener('click', function () {
+                if (isLoggedIn === 'true') {
+                    localStorage.setItem('isLoggedIn', 'false');
+                    loginLogoutBtn.textContent = 'Login';
+                } else {
+                    localStorage.setItem('isLoggedIn', 'true');
+                    loginLogoutBtn.textContent = 'Logout';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
