@@ -1,4 +1,4 @@
-HTML Introduction:
+1.HTML Introduction:
    HTML, which stands for HyperText Markup Language, is the standard language used to create and design web pages. It provides the basic structure of the content on the web, using a system of elements represented by tags.
 
 2. Introduction to HTML:
@@ -7,167 +7,167 @@ HTML Introduction:
 3. Proper File Structure:
    A typical HTML file structure includes the <html>, <head>, and <body> tags. The head contains meta-information and the title of the page, while the body contains the content.
 
-html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Your Title Here</title>
-</head>
-<body>
-    <!-- Content goes here -->
-</body>
-</html>
+      html
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>Your Title Here</title>
+      </head>
+      <body>
+          <!-- Content goes here -->
+      </body>
+      </html>
 
 4. Base HTML Tags:
-  <p> (Paragraph Tags): Used for defining paragraphs.
+    <p> (Paragraph Tags): Used for defining paragraphs.
 
-html
-<p>This is a paragraph.</p>
+    html
+      <p>This is a paragraph.</p>
 
 5. Break Tags:
-  <br> (Break Tags): Used to insert line breaks.
+    <br> (Break Tags): Used to insert line breaks.
 
-html
-This is the first line.<br>
-This is the second line.
+    html
+      This is the first line.<br>
+      This is the second line.
 
 6. Header Tags:
-  <h1> to <h6> (Header Tags): Used for defining headers, where <h1> is the largest and <h6> is the smallest.
+    <h1> to <h6> (Header Tags): Used for defining headers, where <h1> is the largest and <h6> is the smallest.
 
-html
-<h1>Main Header</h1>
-<h2>Sub Header</h2>
+    html
+      <h1>Main Header</h1>
+      <h2>Sub Header</h2>
 
 7. Bold and Italic Tags:
-  <b> (Bold Tags): Used for making text bold.
+      <b> (Bold Tags): Used for making text bold.
 
-  <i> (Italic Tags): Used for making text italic.
+      <i> (Italic Tags): Used for making text italic.
 
-html
-<p>This is <b>bold</b> and this is <i>italic</i>.</p>
+      html
+        <p>This is <b>bold</b> and this is <i>italic</i>.</p>
 
 8. Meta Tags:
-  Meta tags provide metadata about the HTML document. Commonly used for specifying character set, viewport settings, etc.
+   Meta tags provide metadata about the HTML document. Commonly used for specifying character set, viewport settings, etc.
 
-html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    html
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 9. Code Commenting:
-  Comments in HTML are written using <!-- Comment goes here -->.
+      Comments in HTML are written using <!-- Comment goes here -->.
 
-html
-<!-- This is a comment -->
-<p>This is some content</p>
+      html
+        <!-- This is a comment -->
+        <p>This is some content</p>
 
 10. What Makes HTML5 Better?
-  HTML5 introduced new elements, APIs, and features that enhance web development. Some notable features include the <article>, <section>, <nav>, and <header> tags, as well as the <canvas> element for drawing graphics.
+    HTML5 introduced new elements, APIs, and features that enhance web development. Some notable features include the <article>, <section>, <nav>, and <header> tags, as well as the <canvas> element for drawing graphics.
 
                                            Interview Questions and Answers:
-What is HTML?
+1.What is HTML?
   
   HTML stands for HyperText Markup Language. It is used for structuring content on the web.
   Explain the purpose of the <meta> tag.
 
   The <meta> tag is used to provide metadata about the HTML document, such as character set and viewport settings.
 
-How do you create a line break in HTML?
+2.How do you create a line break in HTML?
 
   Use the <br> tag for line breaks.
 
-What is the purpose of the HTML5 <canvas> element?
+3.What is the purpose of the HTML5 <canvas> element?
 
   he <canvas> element is used for drawing graphics, animations, or other visual content.
 
-What is the difference between <b> and <strong> tags?
+4.What is the difference between <b> and <strong> tags?
 
   <b> is used for bold text, while <strong> is used to convey strong importance and is typically displayed as bold.
 
 
 
-<!DOCTYPE html>:
+  <!DOCTYPE html>:
 
-Declares the HTML version being used (HTML5).
-<html>:
+    Declares the HTML version being used (HTML5).
+    <html>:
 
-The root element that wraps the entire HTML content.
-<head>:
+    The root element that wraps the entire HTML content.
+    <head>:
 
-Contains meta-information about the HTML document, such as title, character set, styles, etc.
-<title>:
+    Contains meta-information about the HTML document, such as title, character set, styles, etc.
+    <title>:
 
-Sets the title of the HTML document (displayed in the browser's title bar or tab).
-html
-<title>My Page Title</title>
-<body>:
+    Sets the title of the HTML document (displayed in the browser's title bar or tab).
+    html
+      <title>My Page Title</title>
+      <body>:
 
-Contains the main content of the HTML document, including text, images, links, etc.
-<h1> to <h6>:
+5.Contains the main content of the HTML document, including text, images, links, etc.
+    <h1> to <h6>:
 
-Heading tags, where <h1> is the largest and <h6> is the smallest.
-html
-<h1>Main Heading</h1>
-<h2>Sub Heading</h2>
-<p>:
+6.Heading tags, where <h1> is the largest and <h6> is the smallest.
+    html
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <p>:
 
-Defines a paragraph.
-html
-<p>This is a paragraph.</p>
+7.Defines a paragraph.
+    html
+    <p>This is a paragraph.</p>
 
-<a>:
-Creates hyperlinks to other web pages or resources.
-html
-<a href="https://example.com">Visit Example.com</a>
-<img>:
+8.<a>:
+    Creates hyperlinks to other web pages or resources.
+    html
+    <a href="https://example.com">Visit Example.com</a>
+    <img>:
 
-Embeds images into the HTML document.
-html
-<img src="image.jpg" alt="Description">
-<ul>, <ol>, <li>:
+9.Embeds images into the HTML document.
+      html
+      <img src="image.jpg" alt="Description">
+      <ul>, <ol>, <li>:
 
-<ul>: Defines an unordered list.
-<ol>: Defines an ordered list.
-<li>: Defines list items.
-html
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-</ul>
+      <ul>: Defines an unordered list.
+      <ol>: Defines an ordered list.
+      <li>: Defines list items.
+      html
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
 
-<ol>
-  <li>First</li>
-  <li>Second</li>
-</ol>
-<br>:
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+      </ol>
+      <br>:
 
-Inserts a line break within text.
-html
-This is the first line.<br>This is the second line.
-<strong>, <em>:
+10.Inserts a line break within text.
+    html
+    This is the first line.<br>This is the second line.
+    <strong>, <em>:
 
-<strong>: Represents strong importance, typically displayed as bold.
-<em>: Represents emphasized text, typically displayed as italic.
-html
-<p><strong>Bold Text</strong> and <em>Italic Text</em></p>
-<div>:
+    <strong>: Represents strong importance, typically displayed as bold.
+    <em>: Represents emphasized text, typically displayed as italic.
+    html
+    <p><strong>Bold Text</strong> and <em>Italic Text</em></p>
+    <div>:
 
-A generic container that is often used to group other HTML elements and apply styles.
-html
-<div>
-  <p>Some content here</p>
-</div>
-<span>:
+11.A generic container that is often used to group other HTML elements and apply styles.
+    html
+    <div>
+      <p>Some content here</p>
+    </div>
+    <span>:
 
-Similar to <div>, but for inline elements.
-html
-<p>This is <span style="color: red;">red</span> text.</p>
-<form>, <input>, <button>:
+12.Similar to <div>, but for inline elements.
+    html
+    <p>This is <span style="color: red;">red</span> text.</p>
+    <form>, <input>, <button>:
 
-<form>: Represents an HTML form.
-<input>: Represents an input field within a form.
-<button>: Represents a clickable button.
-html
-<form>
-  <input type="text" placeholder="Enter your name">
-  <button type="submit">Submit</button>
-</form>
+    <form>: Represents an HTML form.
+    <input>: Represents an input field within a form.
+    <button>: Represents a clickable button.
+    html
+    <form>
+      <input type="text" placeholder="Enter your name">
+      <button type="submit">Submit</button>
+    </form>
