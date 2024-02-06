@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loan Application</h1>
+
+    <form>
+        <fieldset>
+            <legend> Basic Information</legend>
+            <label type="text" for="fname"> First Name</label>
+            <input type="text" id="fname" name="fname">
+            <label type="text" for="minitial"> Middle Initial</label>
+            <input type="text" id="minitial" name="minitial">
+            <label type="text" for="lname"> Last Name</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label type="email" for="smail"> Email</label>
+            <input type="email" id="smail" name="smail">
+            <label type="tel" for="phno"> Contact</label>
+            <input type="tel" id="phno" name="phno"><br>
+            <label type="text" for="addrs"> Address</label>
+            <input type="text" id="addrs" name="addrs"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend> Work Information</legend>
+            <label type="text" for="coccupa">Current Occupation</label>
+            <input type="text" id="coccupa" name="coccupa">
+            <label type="text" for="ename"> Employer Name</label>
+            <input type="text" id="ename" name="ename">
+            <label type="text" for="eaddress"> Employer Address</label>
+            <input type="text" id="eaddress" name="eaddress">
+        </fieldset>
+
+        <fieldset>
+            <legend> Loan type & Amount</legend>
+            <input type="text" id="lamount" name="lamount"><br>
+            <label type="number" for="lamount">Loan Amount</label>
+            <input type="number" id="lamount" name="lamount">
+        </fieldset>
+
+        <fieldset>
+            <legend> Length of Loan </legend>
+            <input type="radio" id="lloan1" name="lloan1" value="5">
+            <label type="radio" for="lloan1">5</label>
+            <input type="radio" id="lloan2" name="lloan2" value="15">
+            <label type="radio" for="lloan2">15</label>
+            <input type="radio" id="lloan3" name="lloan3" value="30">
+            <label type="radio" for="lloan3">30</label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Marital status </legend>
+            <input type="radio" id="status1" name="status1">
+            <label type="radio" for="status1">Single</label>
+            <input type="radio" id="status2" name="status2">
+            <label type="radio" for="status2">Married</label>
+            <input type="radio" id="status3" name="status3">
+            <label type="radio" for="status3">Divorced</label>
+        </fieldset>
+        <fieldset>
+            <legend> Special Consideration</legend>
+            <label type="text" for="Dpayment"> Down Payment</label>
+            <input type="text" id="Dpayment" name="Dpayment">
+            <input type="checkbox" id="oresident" name="oresident">
+            <label for="oresident"> Out of state Resident</label>
+            <input type="checkbox" id="csigner" name="csigner">
+            <label for="csigner"> Cosigner</label><br>
+            <label type="text" for="ncosigner"> Name of Cosigner</label>
+            <input type="text" id="ncosigner" name="ncosigner">
+            <label type="text" for="cooccupa"> Cosigner Occupation</label>
+            <input type="text" id="cooccupa" name="cooccupa"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend> Comments</legend>
+            <textarea id="cmnt" name="cmnt" rows="5" cols="50"></textarea>
+        </fieldset>
+        <input type="submit" id="smit" name="smit">
+
+    </form>
+
+
+</body>
+
+</html>
