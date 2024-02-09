@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(63, 49, 124); ">
+    <h1 >STUDENT REGISTRATION FORM</h1>
+        <form style="color: white;">
+            <label style="display: inline-block;
+        width: 150px;
+        text-align: left;"for="FN" name="name">FIRST NAME</label>
+            <input type="text" id="FN" name="name" required>
+            <span>(max 30 characters a-z and A-z)</span><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="LN" name="name">Last NAME</label>
+            <input type="text" id="FN" name="name" required>
+            <span>(max 30 characters a-z and A-z)</span><br><br>
+            <label style="display: inline-block;
+        width: 150px;
+        text-align: left;"for="DOB" name="name">DATE OF BIRTH</label>
+            <select name="Date of birth" id="DOB">
+                <option value="Day">Day:</option>
+            </select>
+            <select name="Date of birth" id="DOB">
+                <option value="Month">Month:</option>
+            </select>
+            <select name="Date of birth" id="DOB">
+                <option value="Year">Year:</option>
+            </select><br><br>
+            <label style="display: inline-block;
+        width: 150px;
+        text-align: left;"for="Em" name="email">EMAIL ID</label>
+            <input type="email" id="Em" name="email"><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="MbN" name="email">MOBILE NUMBER</label>
+            <input type="number" id="MbN" name="mobile number"><br><br>
+            <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="G">GENDER</label>
+            <label  for="Male" name="male">Male</label>
+            <input type="radio" id="Male" name="name">
+             <label  for="Female" name="Female">Female</label>
+             <input type="radio" id="Female" name="name"><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="address" name="address">ADDRESS</label>
+             <textarea></textarea><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="City" name="city">CITY</label>
+             <input type="text" id="City" name="city">
+             <span>(max 30 characters a-z and A-Z)</span><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="pincode" name="pincode">PIN CODE</label>
+             <input type="number" id="pincode"  name="pincode">
+             <span>(6 digit number)</span><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="State" name="state">STATE</label>
+             <input type="text" id="State" name="state">
+             <span>(max 30 characters a-z and A-Z)</span><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;" for="Country" name="country">COUNTRY</label>
+             <input type="text" value="India" id="Country"  name="country"><br><br>
+             <label style="display: inline-block;
+        width: 150px;
+        text-align: left;vertical-align: top;" for="Hobbies" name="hobbies">HOBBIES</label>
+        <div style="display: inline-block">
+        <label for="Drawing" name="Drawing">Drawing</label>
+             <input type="checkbox" id="drawing" name="drawing">
+             <label for="Singing" name="Singing">Singing</label>
+             <input type="checkbox" id="Singing" name="Singing">
+             <label for="Dancing" name="Dancing">Dancing</label>
+             <input type="checkbox" id="Dancing" name="Dancing">
+             <label for="Sketching" name="Sketching">Sketching</label>
+             <input type="checkbox" id="Sketching" name="Sketching"><br><br>
+             <label style="display: inline-block;width: 150px;
+                text-align: left;" for="Others" name="Others">Others</label>
+             <input style="display: inline-block;width: 150px;
+                text-align: left;" type="checkbox" id="Others" name="Others">
+             <input style="display: inline-block;width: 150px;
+                text-align: left;" type="text" ><br><br>
+        </div>
+        <div>
+        <label style="display: block;
+        width: 150px;
+        text-align: left;" for="Qualification" name="Qualification">QUALIFICATION</label>
+            </div>
+            <div>
+            <table style="display: inline-flex;
+        width: 150px;
+        text-align: left;">
+             <tr>
+                <th>SL.NO</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+             </tr>
+             <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+             </tr>
+              <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+             </tr>
+             <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+                <td><input type="text" id="table" ></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td> <span>(10 char max)</span></td>
+                <td><span>(upto 2 decimal)</span></td>
+                <td></td>
+             </tr>
+             </table><br><br>
+             </div>
+             <label for="courses" name="courses">COURSES APPLIED FOR</label>
+             <label for="bca" name="bca">BCA</label>
+             <input type="radio" id="bca" name="name">
+             <label for="bcom" name="bcom">B.Com</label>
+             <input type="radio" id="bcom" name="name">
+              <label for="B.Sc" name="B.Sc">B.Sc</label>
+             <input type="radio" id="B.Sc" name="name">
+             <label for="B.A" name="B.A">B.A</label>
+             <input type="radio" id="B.A" name="name"><br><br>
+             <input  style="display: inline-block;
+        width: 150px;
+        text-align: right;" type="submit" name="submit">
+             <input  style="display: inline-block;
+        width: 150px;
+        text-align: right;" type="reset" name="reset">
+        </form>
+</body>
+</html>
