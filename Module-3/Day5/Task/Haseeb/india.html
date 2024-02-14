@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   .organe{
+      border:2px;
+      background-color: orange;
+      height: 300px;
+      width: 100%;
+    }
+    .white{
+      height: 300px;
+      background-color: white;
+      width: 100%;
+      display: flex;
+    }
+    .white img{
+      animation: rotate 5s normal linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+      25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+      }
+      50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+      }
+      75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+      }
+      100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+    }
+
+    .green{
+      height: 300px;
+      background-color: green;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class ="organe" ></div>
+  <div class="white">
+    <img src="./task_2/assets/360_F_311134651_RXMvbUB3h089Js0ODvuHrttmsON9Tpik.jpg" height="300px"  alt="">
+  </div>
+  <div class="green"></div>
+  
+</body>
+</html>
