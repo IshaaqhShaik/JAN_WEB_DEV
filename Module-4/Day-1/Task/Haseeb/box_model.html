@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 100%;
+      height: 54vh;
+      background-color: rgb(241, 239, 239);
+      display: flex;
+      border: 1px solid black;
+      margin: 10px;
+    }
+    .width25{
+      width: 25%;
+      border: 0px solid black;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .width50{
+      height: 440px;
+      width: 50%;
+      border: 0px solid black;
+      padding: 20px;
+      margin: 20px;
+      border: 0px solid black;
+  }   
+    div{
+      background-color: rgb(241, 239, 239);
+    }
+    .container1-content{
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      border: 0px solid black;
+      position: relative;
+    }
+    .sub-box{
+      height: 50px;
+      width: 50px;
+    }
+    .lb{
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      background-color: darkblue;
+    }
+    .rb{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      background-color: lightcoral;
+    }
+    .tl{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      background-color: maroon;
+    }
+    .tr{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-color: darkgreen;
+    }
+
+    .width50 > h1 {
+    text-align: center;
+   }
+    .width50 > p {
+    height: calc(160% - 489px);
+    background: white;
+  }
+   .mt20{
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      border: 0px solid black;
+      position: relative;
+      margin-top: 20px;
+
+  }
+  .mt19{
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      border: 0px solid black;
+      position: relative;
+      margin-top: 20px;
+  }
+  .mt21{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border: 0px solid black;
+      position: relative;
+      margin-top: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="width25">
+      <div class="container1-content">
+        <div class="sub-box lb">
+        </div>
+      </div>
+      <div class="container2-content  mt20">
+        <div class="sub-box rb">
+        </div>
+      </div>
+    </div>
+    <div class="width50">
+      <h1>Tableless Layout</h1>
+      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quas accusamus animi eius, hic voluptatum magni doloribus! Maxime iusto officiis a placeat explicabo? Vitae, saepe! Cumque quisquam unde delectus doloremque fugiat ullam magni at rerum neque iusto. Voluptates dolores quae distinctio voluptas dolorum asperiores culpa dolor molestiae eum, officia reprehenderit, sint ipsa enim repudiandae vitae blanditiis? Sit, veniam cumque beatae consequatur recusandae quaerat animi et illo, corporis perferendis asperiores porro quae deserunt velit, necessitatibus reiciendis. Quas laudantium eos autem veritatis minus dolore eum ad, delectus nulla earum iusto temporibus quae reprehenderit numquam aspernatur explicabo ratione deserunt! Provident tempore explicabo rerum!</p>
+    </div>
+    <div class="width25">
+      <div class="container-content mt19">
+        <div class="sub-box tl">
+        </div>
+      </div>
+      <div class="container 4-content mt21">
+        <div class="sub-box tr">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
