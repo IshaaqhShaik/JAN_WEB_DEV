@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOX</title>
+</head>
+<body>
+  <style>
+    body {
+        margin: 100px;
+        border: 5px;
+    }
+    .first {
+        width: 1000px;
+        height: 130px;
+        border: 1px solid black;
+    }
+    .second {
+        width: 960px;
+        height: 91px;
+        border: 1px solid black;
+        margin-top: 19px;
+        margin-left: 20px;
+    }
+    .third{
+      width: 920px;
+      height: 71px;
+      border: 1px solid black;
+      margin-top: 9px;
+      margin-left: 20px;
+      box-sizing: border-box;
+      padding: 15px 0px;
+    }
+    .content1 {
+        width: 200px;
+        height: 40px;
+        border: 1px solid black;
+        margin-right: 150px;
+        margin-left: 20px;
+      }
+    .content2 {
+        width: 250px;
+        height: 40px;
+        border: 1px solid black;
+        margin-right: 30px;
+    }
+    .content3 {
+        width: 250px;
+        height: 40px;
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+<div class="first">
+    <div class="second">
+        <div class="third">
+          <button class="content1">Content1</button>
+          <button class="content2">Content2</button>
+          <button class="content3">Content3</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
