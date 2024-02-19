@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-  <h1>Nested Tables</h1>
-  <table>
-    <tr>
-      <th style="border: 1px solid black;">Header column 1</th>
-      <th style="border: 1px solid black;">Header column 2</th>
-      <th style="border: 1px solid black;">Header column 3</th>
-      <th style="border: 1px solid black;">Header column 4</th>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black;">Row 2 - Item 1</td>
-      <td style="border: 1px solid black;" >Row 2 - Item 2</td>
-      <th style="border: 1px solid black;" rowspan="4">Row 2: Nested Table 1
-        <table>
+
+    <table>
+
         <tr>
-          <th style="border: 1px solid black;">Row 1 Header</th>
-          <td style="border: 1px solid black;">item</td>
-          </tr>   
-          <tr>
-          <th style="border: 1px solid black;"> Row 2 Header</th>
-          <td style="border: 1px solid black;">item</td>
+            <th style=" border: 1px solid black"> Header column 1</th>
+            <th  style=" border: 1px solid black"> Header column 2</th>
+            <th  style=" border: 1px solid black"> Header column 3</th>
+            <th style=" border: 1px solid black">Header column 4</th>
+
         </tr>
         <tr>
-          <th style="border: 1px solid black;"> Row 3 Header</th>
-          <td style="border: 1px solid black;">item</td>
+            <td  style=" border: 1px solid black"> Row 2 - Item 1 </td>
+            <td style=" border: 1px solid black"> Row 2 - Item 2</td>
+            <th  style=" border: 1px solid black"rowspan="2"> Row 2: Nested Table 1
+
+                <table>
+                    <tr>
+                        <th style=" border: 1px solid black"> Row 1 Header</th>
+                        <td style=" border: 1px solid black">item</td>
+                    </tr>
+                    <tr style=" border: 1px solid black">
+                        <th style=" border: 1px solid black"> Row 2 Header</th>
+                        <td style=" border: 1px solid black">item</td>
+                    </tr>
+
+                    <tr>
+                        <th style=" border: 1px solid black"> Row 3 Header</th>
+                        <td style=" border: 1px solid black">item</td>
+                    </tr>
+
+
+                </table>
+
+            </th>
+
+
+            <td style=" border: 1px solid black"> Row 2 - Item 4<br> A second line</td>
         </tr>
-      </table>
-      </th>
-      
-      <td style="border: 1px solid black;" >Row 2 - Item 4 <br> A second Line</td>
-    </tr>
-    <tr>
-      <th style="border: 1px solid black;"rowspan = "3">Row 3: Nested Table 2
-      <table>
-      <tr>
-        <th style="border: 1px solid black;">Row 1 Header</th>
-        <td style="border: 1px solid black;">item</td>
-      </tr>
-    </tr>  
+
         <tr>
-        <th style="border: 1px solid black;"> Row 2 Header</th>
-        <td style="border: 1px solid black;">item</td>
-      </tr>
+            <th style=" border: 1px solid black">Row 3: Nested Table 2
+
+                <table>
+                    <tr>
+                        <th style=" border: 1px solid black"> Row 1 Header</th>
+                        <td style=" border: 1px solid black">item</td>
+                    </tr>
+                    <tr>
+                        <th style=" border: 1px solid black"> Row 2 Header</th>
+                        <td style=" border: 1px solid black">item</td>
+                    </tr>
+                </table>
+
+            </th>
+
+
+            <td style=" border: 1px solid black"> Row 3 - Item 2</td>
+            <td  style=" border: 1px solid black"rowspan="2"> Row 3- Item 3</td>
+
+        </tr>
+
+        <tr>
+
+            <td style=" border: 1px solid black">Row 4-item 1 </td>
+            <td style=" border: 1px solid black">Row 4-item 2 </td>
+            <td style=" border: 1px solid black">Row 4-item 3 </td>
+        </tr>
+
+        <tr>
+            <td  style=" border: 1px solid black" colspan="4"> Row 5- Last row of our table</td>
+        </tr>
+
+
+
+
     </table>
-    </th>
-    <tr>
-      <td style="border: 1px solid black;" rowspan="4">Row 3 - Item 2</td>
-      <td style="border: 1px solid black;" rowspan="3">Row 3 - Item 3</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black;">Row 4 - Item 1</td>
-      <td style="border: 1px solid black;">Row 4 -Item 2</td>
-      <td style="border: 1px solid black;">Row 4 - Item </td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black;"colspan = "4">Row 5 - Last row of outer table</td>
-    </tr>
-    
-  </table>
+
 </body>
+
 </html>
