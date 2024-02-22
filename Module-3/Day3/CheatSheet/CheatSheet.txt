@@ -1,0 +1,99 @@
+What is HTML <form>?
+  <form> is an HTML element to collect input data containing interactive controls. It provides facilities to input text, numbers, values, email, password, and control fields such as checkboxes, radio buttons, submit buttons, etc., or in other words, form is a container that contains input elements like text, email, number, radio buttons, checkboxes, submit buttons, etc. 
+
+ It also :
+  Facilitates user input collection through various elements.
+  Utilizes <form> tags to structure input elements.
+  Defines actions for data submission upon form completion.
+  Supports client-side validation for enhanced user experience.
+  Syntax:
+
+   <form>
+      <!--form elements-->
+   </form>
+ Form elements:
+  These are the following HTML <form> elements:
+
+  <label>: It defines label for <form> elements.
+  <input>: It is used to get input data from the form in various types such as text, password, email, etc by changing its type.
+  <button>: It defines a clickable button to control other elements or execute a functionality.
+  <select>: It is used to create a drop-down list.
+  <textarea>: It is used to get input long text content.
+  <fieldset>: It is used to draw a box around other form elements and group the related data.
+  <legend>: It defines a caption for fieldset elements.
+  <datalist>: It is used to specify pre-defined list options for input controls.
+  <output>: It displays the output of performed calculations.
+  <option>: It is used to define options in a drop-down list.
+  <optgroup>: It is used to define group-related options in a drop-down list.
+  
+ Textbox in HTML Form:
+  In an HTML form, we use the <input> tag by assigning type attribute value to text to input single line input. To define type attribute see the below syntax. 
+
+  Tip: The default value of the type attribute is “text“.
+  Syntax:
+
+  <input type="text" />
+
+  // Or shorthand for "text" type:
+
+  <input />
+  
+ Password in an HTML Form:
+  We can change the type value text to password to get the input password
+  syntax:
+         <label>Password :
+         <input type="password" /></label>
+ 
+ Radio Button in an HTML Form:
+  To create a radio button, we use the <input> tag following by radio type to provide users to choose a limited number of choices. The value attribute defines the unique value associated with each radio button. The value is not shown to the user, but is the value that is sent to the server on “submit” to identify which radio button that was selected.
+
+  Syntax:
+
+  <input type="radio" name="radio_button_name" value="radio_button_value" />
+  Note: The radio button must have shared the same name to be treated as a group. 
+
+
+ Checkbox in an HTML Form:
+  To create a checkbox in an HTML form, we use the <input> tag followed by the input type checkbox. It is a square box to tick to activate this. It used to choose more options at a time. 
+
+  Syntax:
+
+  <input type="checkbox" name="select_box_name" value="select_box_value" />  
+  
+  Note: the “name” and “value” attributes are used to send the checkbox data to the server.
+  
+ Submit button in an HTML Form:
+  In the HTML form, submit button is used to submit the details of the form to the form handler. A form handler is a file on the server with a script that is used to process input data.  
+
+  Syntax:
+
+   <button type="submit">submit</button>
+  Example: In this example, we will create a submit button. 
+  
+ TextArea in an HTML Form:
+  In the HTML form, a text area is used to add comments or reviews, or addresses to the form, in other words, the text area is a multi-line text input control. It contains an unlimited number of characters, the text renders in a fixed-width font, and the size of the text area is given by the <rows> and <cols> attributes. To create a text area in the form use the <textarea> tag.
+
+  Syntax:
+
+   <textarea name="textarea_name">content</textarea>
+   Note: the name attribute is used to reference the textarea data after it is sent to a server.
+ 
+The Window Navigator Object:
+ The navigator object contains information about the browser. The navigator object is a property of the window object. The navigator object is accessed with:
+
+ window.navigator or just navigator.
+  syntax:
+   let url = navigator.language;
+   
+ Navigator Object Properties:
+  Property	    Description
+  appCodeName	Returns browser code name
+  appVersion	Returns browser version
+  cookieEnabled	Returns true if browser cookies are enabled
+  geolocation	Returns a geolocation object for the user's location
+  language	    Returns browser language
+  onLine	    Returns true if the browser is online
+  platform	    Returns browser platform
+  product	    Returns browser engine name
+  userAgent	    Returns browser user-agent header
+  
