@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0px;
+       }
+       .main{
+        border: 1px solid black;
+        text-align: center;
+        font-size: x-large;
+        margin: 0px 200px;
+       }
+       .hero-banner{
+        background-color: lightgray;
+        padding: 100px;
+       }
+       .service{
+        height: 200px;
+        width: 400px;
+        background-color: rgb(229, 241, 242);
+        border: 1px solid black;
+        margin: 100px 0px;
+        position: relative;
+       }
+       .services{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 100px;
+        background-color: rgb(255, 255, 255);
+       }
+       .service img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+       button{
+        padding: 10px;
+        background-color: blue;
+        color: white;
+       }
+       .services  > img{
+        color: blue;
+
+       }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="hero-banner">
+      <h1>A Warm Welcome</h1>
+      <p>Bootstrap utility are used to create this jumbotron since he old component has been <br> removed from the framework. Why create CSS when you can use utilities?</p>
+      <button>Call to action</button>
+    </div>
+    <section class="services">
+      <div class="service servic-1">
+        <img src="./assets/icons8-uncheck-all-50.png"/>
+        <h2>Fresh new Layout</h2>
+        <p>With Bootstrap $we'el created afresh new layout for this template</p>
+      </div>
+      <div class="service servic-2">
+        <img src="./assets/icons8-download-64.png"/>
+        <h2>Free to download</h2>
+        <p>With Bootstrap $we'el created afresh new layout for this template</p>
+      </div>
+      <div class="service servic-3">
+        <img src="./assets/icons8-clean-code-24.png"/>
+        <h2>Jumbotron hero header</h2>
+        <p>With Bootstrap $we'el created afresh new layout for this template</p>
+      </div>
+      <div class="service servic-4">
+        <img src="./assets/icons8-name-64.png"/>
+        <h2>Feature boxes</h2>
+        <p>With Bootstrap $we'el created afresh new layout for this template</p>
+      </div>
+      <div class="service servic-5">
+        <img src="./assets/icons8-approval-50.png"/>
+        <h2>Simple clean code</h2>
+        <p>With Bootstrap $we'el created afresh new layout for this template</p>
+      </div>
+      <div class="service servic-6">
+        <img src="./assets/icons8-double-tick-100.png"/>
+        <h1>A name you trust</h1>
+        <p>With Bootstrap $we'el created afresh new layout for this template</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
