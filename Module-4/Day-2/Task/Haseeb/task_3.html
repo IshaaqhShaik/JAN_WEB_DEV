@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      height: 200px;
+      width: 800px;
+      background-color: aquamarine;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .ball_to_square{
+      height: 150px;
+      width: 150px;
+      background-color: black;
+      margin: 25px 0;
+      animation: 1.5s ease-out 0s infinite identifier ;
+    }
+    @keyframes identifier {
+      0% {
+       border-radius: 0%;
+       margin-left: 0;
+       transform: rotate(0deg);
+      }
+      45% {
+        border-radius: 50%;
+        margin-left: 650px;
+        transform: rotate(120deg);
+      }
+      100% {
+        border-radius: 0%;
+        margin-left: 0;
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ball_to_square">
+    </div>
+  </div>
+  
+</body>
+</html>
