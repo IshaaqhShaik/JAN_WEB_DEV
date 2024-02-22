@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 align="center"> Job Details:</h1>
+    <form style="text-align-last: center;border: dotted;width: fit-content;
+    margin: auto;">
+
+
+
+        <label type="text" for="jdetails">Job details:</label>
+        <input type="text" id="jdetails" name="jdetails"><br>
+        <label type="text" for="description">Description:</label>
+        <textarea id="description" name="description" rows="5" cols="22"></textarea><br>
+        <p>
+            Brief description should have atmost 500 characters
+        </p>
+        <label type="text" for="cname">Company Name:</label>
+        <input type="text" id="cname" name="cname"><br>
+        <label type="tel" for="cnumber">Contact number:</label>
+        <input type="tel" id="cnumber" name="cnumber"><br>
+        <label type="text" for="cperson">Contact number:</label>
+        <input type="text" id="cperson" name="cperson"><br>
+        <label type="email" for="jmail">Email:</label>
+        <input type="email" id="jmail" name="jmail"><br>
+        <label type="text" for="wstatus">Work status:</label>
+        <input type="checkbox" id="ftime" name="ftme">
+        <label for="ftime"> Full Time</label>
+        <input type="checkbox" id="ptime" name="ptime">
+        <label for="ptime"> Part Time</label>
+        <input type="checkbox" id="pdim" name="pdim">
+        <label for="pdim"> Per Dim</label>
+        <input type="checkbox" id="others" name="others">
+        <label for="others"> Others</label><br>
+
+        <label type="number" for="salary">Salary:</label>
+        <select name="salary">
+            <option value="usdollar">USdollar</option>
+            <option value="rupee">Rupee</option>
+        </select>
+        <select name="salary">
+            <option value="yearly">Yearly</option>
+            <option value="monthly">Monthly</option>
+        </select><br>
+
+        <label type="number" for="exp">Experience:</label>
+        <input type="number" id="exp" name="exp"><br>
+        <label type="text" for="loc">Location:</label>
+        <input type="text" id="loc" name="loc"><br>
+
+        <label for="quali">Qualifications:</label>
+        <select name="quali">
+            <option value="any">Any</option>
+            <option value="highschool">High school</option>
+            <option value="associate">Associate</option>
+            <option value="Pre bachelors">Pre Bachelors</option>
+        </select>
+        <button type="text" id="quali" value="ADD"> ADD>> </button>
+        <button type="text" id="quali" value="REMOVE"> REMOVE </button>
+        <textarea id="quali" name="quali" cols="5"></textarea><br>
+
+
+        <input type="submit" id="smit" name="smit">
+        <input type="reset" id="clr" name="clr">
+
+
+
+    </form>
+</body>
+
+</html>
