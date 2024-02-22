@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        background: #fdd;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      input[type="checkbox"]{
+        visibility: hidden;
+      }
+      .image-selector > input[type="checkbox"]:checked {
+        border: 1px solid green;
+      }
+      input[type="checkbox"] + .checkbox-label {
+        background-color: transparent;
+        height: 235px;
+        display: inline-block;
+      }
+
+      input[type="checkbox"]:checked + .checkbox-label {
+        background-color: green;
+      }
+      input[type="checkbox"]:checked + .checkbox-label:before {
+        content: "";
+      }
+      .image-1{
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="image-selector">
+        <input type="checkbox" name="image-checkbox" id="image-checkbox" />
+        <label for="image-checkbox" class="checkbox-label">
+          <img src="./task_2/assets/kaha.jpeg" alt="" class="image-1"/>
+        </label>
+      </div>
+      <div class="image-selector">
+        <input type="checkbox" name="image-checkbox" id="image-checkbox-2" />
+        <label for="image-checkbox-2" class="checkbox-label">
+          <img src="./task_2/assets/kaha.jpeg" alt="" class="image-1"/>
+        </label>
+      </div>
+    </section>
+  </body>
+</html>
