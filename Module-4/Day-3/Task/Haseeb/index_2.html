@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queary </title>
+  <style>
+    ul{
+      display: flex;
+    }
+    li, a{
+      text-decoration: none;
+      list-style-type: none;
+    }
+    li.list-link{
+      margin: 0px 10px;
+    }
+    a.link{
+      padding: 5px 3px;
+      background-color: aquamarine;
+      border-radius: 5px;
+    }
+    .hero-banner{
+      height: 0;
+      width: 100%;
+      padding-bottom: 45%;
+      background-color: aquamarine;
+      border-radius: 5px;
+      text-align: right;
+    }
+
+    .articles{
+      margin: 10px 0px;
+    }
+
+    .article{
+      height: 0;
+      width: calc(50% - 12px);
+      margin: 5px;
+      padding-bottom: 15%;
+      background-color: aquamarine;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    footer{
+      height: 40px;
+      width: 100%;
+      background-color: aquamarine;
+      border-radius: 5px;
+    }
+
+
+    @media only screen and (max-width: 380px) {
+      ul{
+        flex-direction: column;
+        padding: 0px;
+      }
+      li.list-link{
+        margin: 2px 10px;
+      }
+      a.link{
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+
+      .article{
+        width: calc(100% - 10px);
+      }
+
+    }
+
+    @media only screen and (min-width: 380px) and (max-width: 760px){
+      .article{
+        width: calc(25% - 13px);
+        padding-bottom: 55%;
+      }
+    }
+
+    @media only screen and (min-width: 760px) {
+      .hero-banner{
+        height: 335px;
+        padding-bottom: 0;
+      }
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <!-- Header section -->
+  <ul>
+    <li class="list-link"><a class="link" href="">links-1</a></li>
+    <li class="list-link"><a class="link" href="">links-2</a></li>
+    <li class="list-link"><a class="link" href="">links-3</a></li>
+    <li class="list-link"><a class="link" href="">links-4</a></li>
+  </ul>
+
+  <!-- Banner section -->
+
+  <section class="hero-banner">
+    Banner
+  </section>
+  <!-- Articles section -->
+  <section class="articles">
+    <article class="article">Article 1</article>
+    <article class="article">Article 2</article>
+    <article class="article">Article 3</article>
+    <article class="article">Article 4</article>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer>
+    footer
+  </footer>
+
+
+</body>
+
+</html>
