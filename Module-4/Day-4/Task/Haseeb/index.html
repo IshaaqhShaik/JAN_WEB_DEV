@@ -7,14 +7,13 @@
     <style>
       * {
         box-sizing: border-box;
-        color: white
-         }
+        color: white;
+      }
       .wrapper {
-       
         margin: 0 auto;
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 2px;
       }
 
@@ -63,24 +62,20 @@
         background-color: rgb(131, 79, 79);
       }
 
-      @media  only screen and ( min-width:450px){
-
-        .wrapper{
-          grid-auto-rows: minmax(150px ,auto)
-          
-      }}
-      @media only screen and ( max-width:740px){
-        .wrapper{
+      @media only screen and (min-width: 450px) {
+        .wrapper {
+          grid-auto-rows: minmax(150px, auto);
+        }
+      }
+      @media only screen and (max-width: 740px) {
+        .wrapper {
           display: flex;
           flex-direction: column;
         }
         .wrapper > div {
           height: 100px;
         }
-        
       }
-      
-
     </style>
   </head>
   <body>
