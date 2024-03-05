@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        grid-auto-columns: minmax(200px, auto);
+        margin: 0 auto;
+      }
+      .one {
+        grid-column: 1/4;
+        grid-row: 1/3;
+        background-color: pink;
+      }
+
+      .two {
+        grid-column: 1/6;
+        grid-row: 3/4;
+        background-color: violet;
+      }
+
+      .three {
+        grid-column: 4/6;
+        grid-row: 1/2;
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(0, 212, 255, 1) 0%,
+          rgba(174, 174, 249, 1) 100%
+        );
+      }
+
+      .four {
+        grid-column: 4/6;
+        grid-row: 2/3;
+        background-color: aquamarine;
+      }
+
+      .five {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background: rgb(199, 237, 198);
+        background: linear-gradient(
+          45deg,
+          rgba(199, 237, 198, 1) 6%,
+          rgba(222, 160, 139, 1) 16%,
+          rgba(255, 90, 247, 1) 98%
+        );
+      }
+
+      .six {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        background: rgb(199, 237, 198);
+        background: linear-gradient(
+          45deg,
+          rgba(199, 237, 198, 1) 6%,
+          rgba(222, 160, 139, 1) 16%,
+          rgba(255, 90, 247, 1) 98%
+        );
+      }
+
+      .seven {
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background: rgb(199, 237, 198);
+        background: linear-gradient(
+          45deg,
+          rgba(199, 237, 198, 1) 6%,
+          rgba(222, 160, 139, 1) 16%,
+          rgba(255, 90, 247, 1) 98%
+        );
+      }
+
+      .eight {
+        grid-column: 4/5;
+        grid-row: 4/5;
+        background: rgb(199, 237, 198);
+        background: linear-gradient(
+          45deg,
+          rgba(199, 237, 198, 1) 6%,
+          rgba(222, 160, 139, 1) 16%,
+          rgba(255, 90, 247, 1) 98%
+        );
+      }
+
+      .nine {
+        grid-column: 5/6;
+        grid-row: 4/5;
+        background: rgb(199, 237, 198);
+        background: linear-gradient(
+          45deg,
+          rgba(199, 237, 198, 1) 6%,
+          rgba(222, 160, 139, 1) 16%,
+          rgba(255, 90, 247, 1) 98%
+        );
+      }
+      .box {
+        height: 40px;
+        width: 40px;
+        border: 1px solid wheat;
+        border-radius: 5px;
+        background-color: white;
+        transform: rotate(-45deg);
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mini {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">
+        <div class="box"><span class="mini">1</span></div>
+      </div>
+      <div class="two">
+        <div class="box"><span class="mini">2</span></div>
+      </div>
+      <div class="three">
+        <div class="box"><span class="mini">3</span></div>
+      </div>
+      <div class="four">
+        <div class="box"><span class="mini">4</span></div>
+      </div>
+      <div class="five">
+        <div class="box"><span class="mini">5</span></div>
+      </div>
+      <div class="six">
+        <div class="box"><span class="mini">6</span></div>
+      </div>
+      <div class="seven">
+        <div class="box"><span class="mini">7</span></div>
+      </div>
+      <div class="eight">
+        <div class="box"><span class="mini">8</span></div>
+      </div>
+      <div class="nine">
+        <div class="box"><span class="mini">9</span></div>
+      </div>
+    </div>
+  </body>
+</html>
